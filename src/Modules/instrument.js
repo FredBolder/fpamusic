@@ -1,6 +1,8 @@
 class Instrument {
-    constructor() { }
-
+    constructor() {
+        console.log("Hello Success! :)")
 }
+     }
+    
 
 export { Instrument };
