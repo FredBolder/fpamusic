@@ -1,6 +1,5 @@
 class Instrument {
     constructor() {
-        console.log("Hello Success! :)")
 }
      }
     
