@@ -6,7 +6,7 @@ function Profile() {
     const {username } =useContext(LoginContext);
   return (
     <>
-     <h1>FpaMusic</h1>
+     <h1>FpaMusic!!!!!!!!!!!</h1>
     <h2>WELCOME  {username}</h2>
   
   </>)
