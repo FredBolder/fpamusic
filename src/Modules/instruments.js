@@ -1,9 +1,8 @@
-import { Instrument } from "./instrument.js";
 import { Piano } from "./piano.js";
 import { Drums } from "./drums.js";
 
 class Instruments {
-  constructor() {}
+  constructor() { }
 
   getInfo(instrument) {
     // The instrument parameter must have the type string.
@@ -32,6 +31,10 @@ class Instruments {
     }
 
     return result;
+  }
+
+  getInstrumentList() {
+    return ["Drums", "Piano"];
   }
 }
 
