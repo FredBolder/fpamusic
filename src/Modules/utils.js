@@ -1,27 +1,32 @@
 class Utils {
-    static getStringFromList(str, idx) {
-        // This function returns a string from a comma separated list in str (example: "Piano, Drums, Guitar").
-        // When idx is 0, the first string is returned.
-        // When idx is invalid, an empty string is returned.
-
-        return "";
+  static getStringFromList(str, idx) {
+    // This function returns a string from a comma separated list in str (example: "Piano, Drums, Guitar").
+    let result = ""; // The variable is storing the name with index(if available), if not it is returning an empty string.
+    const items = str.split(",");
+    if (idx >= 0 && idx < items.length) {
+      result = items[idx].trim();
+    } else {
+      result = "";
     }
 
-    static log(str, mode = 0) {
-        // mode
-        // 0 = console
-        // 1 = window
-        switch (mode) {
-            case 0:
-                console.log(str);
-                break;
-            case 1:
-                window.alert(str);
-                break;
-            default:
-                break;
-        }
+    return result;
+  }
+
+  static log(msg, mode = 0) {
+    // mode
+    // 0 = console
+    // 1 = window
+    switch (mode) {
+      case 0:
+        console.log(msg);
+        break;
+      case 1:
+        window.alert(msg);
+        break;
+      default:
+        break;
     }
+  }
 }
 
 export { Utils };
