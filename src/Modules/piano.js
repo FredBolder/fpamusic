@@ -4,7 +4,7 @@ class Piano extends Instrument {
     constructor() {
         super();
         this.generalInfo = "A piano is a keyboard instrument. Normally there are black and white keys "; 
-        this.generalInfo += "and NOT READY. "; 
+        this.generalInfo += "and the black keys are raised above the white keys. "; 
         this.generalInfo += "The acoustic piano types are the grand piano and the upright piano. "; 
         this.generalInfo += "The sound quality of a grand piano is better, but for an upright piano "; 
         this.generalInfo += "there is less space needed. "; 
@@ -21,6 +21,9 @@ class Piano extends Instrument {
                 virtual: [
                     "https://virtualpiano.net/",
                     "https://www.musicca.com/piano"
+                ],
+                youtube: [
+                    "https://www.youtube.com/playlist?list=PLrNNL05e9FT9UnPiTktveaPrye0exDY9N"
                 ],
             }
         };
