@@ -1,8 +1,10 @@
 import { Piano } from "./piano.js";
 import { Drums } from "./drums.js";
+import { Utils } from "./utils.js";
+import { Instrument } from "./instrument.js";
 
 class Instruments {
-  constructor() { }
+  constructor() {}
 
   getInfo(instrument) {
     // The instrument parameter must have the type string.
@@ -34,7 +36,19 @@ class Instruments {
   }
 
   getInstrumentList() {
-    return ["Drums", "Piano"];
+    return ["Drums", "Piano", "Recorder"];
+  }
+
+  getLinkCategories(links) {
+    let categories = [];
+    const keys = Object.keys(links);
+    for (const key of keys) {
+      if (links[key].length > 0) {
+        categories.push(key);
+      }
+    }
+
+    return categories;
   }
 }
 

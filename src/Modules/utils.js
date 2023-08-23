@@ -27,6 +27,31 @@ class Utils {
         break;
     }
   }
+
+  static capitalize(str) {
+    let firstLetter = "";
+    let rest = "";
+    let result = "";
+
+    if (str === "") {
+      result = "";
+    } else {
+      firstLetter = str[0].toUpperCase();
+      rest = str.slice(1).toLowerCase();
+      result = firstLetter + rest;
+    }
+    return result;
+  }
+
+  static underscoreToSpaces(str) {
+    let changedString = str.split("_").join(" ");
+    return changedString;
+  }
+
+  static spacesToUnderscore(str) {
+    let changedString = str.split(" ").join("_");
+    return changedString;
+  }
 }
 
 export { Utils };
