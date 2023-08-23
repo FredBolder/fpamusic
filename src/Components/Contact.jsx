@@ -3,12 +3,13 @@ import { LoginContext } from "./Contexts/LoginContexts";
 import { useContext } from "react";
 
 function Contact() {
-  const { setshowContact } = useContext(LoginContext);
+  const { setShowContact } = useContext(LoginContext);
+
   return (
     <div>
       <button
         onClick={() => {
-          setshowContact(true);
+          setShowContact(true);
         }}
       >
         Contact
