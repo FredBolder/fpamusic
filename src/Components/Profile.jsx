@@ -1,14 +1,15 @@
-import React from 'react'
-import { useContext } from 'react'
-import { LoginContext } from '../Context/LoginContext';
+import React from "react";
+import { useContext } from "react";
+import { LoginContext } from "../Context/LoginContext";
 
 function Profile() {
-    const {username } =useContext(LoginContext);
+  const { username } = useContext(LoginContext);
   return (
     <>
-     <h1>FpaMusic!!!!!!!!!!!  here</h1>
-    <h2>WELCOME  to  {username} for joininggit music</h2>
+      <h1>FpaMusic!!!!!!!!!!! here</h1>
+      <h2>WELCOME to {username} for joining  music</h2>
+    </>
+  );
   
-  </>)
 }
-export default Profile
+export default Profile;
