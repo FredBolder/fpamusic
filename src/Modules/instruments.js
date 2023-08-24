@@ -1,10 +1,10 @@
 import { Piano } from "./piano.js";
 import { Drums } from "./drums.js";
-import { Utils } from "./utils.js";
-import { Instrument } from "./instrument.js";
+import { Recorder } from "./recorder.js";
+import { Voice } from "./voice.js";
 
 class Instruments {
-  constructor() {}
+  constructor() { }
 
   getInfo(instrument) {
     // The instrument parameter must have the type string.
@@ -20,8 +20,17 @@ class Instruments {
       case "drums":
         result = new Drums();
         break;
+      case "kalimba":
+        result = new Kalimba();
+        break;
       case "piano":
         result = new Piano();
+        break;
+      case "recorder":
+        result = new Recorder();
+        break;
+      case "voice":
+        result = new Voice();
         break;
       // Add more cases for other instruments.
       default:
@@ -36,7 +45,7 @@ class Instruments {
   }
 
   getInstrumentList() {
-    return ["Drums", "Piano", "Recorder"];
+    return ["Drums", "Kalimba", "Piano", "Recorder", "Voice"];
   }
 
   getLinkCategories(links) {
