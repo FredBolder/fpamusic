@@ -1,5 +1,6 @@
 import { Piano } from "./piano.js";
 import { Drums } from "./drums.js";
+import { Kalimba } from "./kalimba.js";
 import { Recorder } from "./recorder.js";
 import { Voice } from "./voice.js";
 
