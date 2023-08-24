@@ -3,19 +3,23 @@ import { Instrument } from "./instrument.js";
 class Recorder extends Instrument {
     constructor() {
         super();
-        this.generalInfo = "A recorder is a woodwind instrument. ";
-        this.generalInfo += "You might think that you can not tune a recorder, but if you ";
-        this.generalInfo += "blow harder the pitch will be higher and if you blow softer the ";
-        this.generalInfo += "pitch will be lower. You can also lower the pitch by pulling the ";
-        this.generalInfo += "mouthpiece a little out. ";
-        this.generalInfo += "";
+        this.gi = "A recorder is a woodwind instrument. ";
+        this.gi += "You might think that you can not tune a recorder, but if you ";
+        this.gi += "blow harder the pitch will be higher and if you blow softer the ";
+        this.gi += "pitch will be lower. You can also lower the pitch by pulling the ";
+        this.gi += "mouthpiece a little out. ";
+        this.gi += "";
         this.info = {
             name: "Recorder",
             category: "Woodwind",
-            generalInfo: this.generalInfo,
+            generalInfo: this.gi,
             links: {
                 general: [
                     "https://en.wikipedia.org/wiki/Recorder_(musical_instrument), Recorder - Wikipedia"
+                ],
+                beginners_lessons: [
+                    "https://www.youtube.com/watch?v=-d6uVjIEkMY, First lesson",
+                    "https://www.youtube.com/playlist?list=PLYVfQ47cCHaCRrSS8jeNptYyXGx3DqPtH"
                 ],
                 articles: [
                     "https://professionalcomposers.com/flute-vs-recorder/, Flute vs Recorder"
@@ -29,13 +33,14 @@ class Recorder extends Instrument {
                 youtube: [
                     "https://www.youtube.com/@Team_Recorder"
                 ],
+                books: [
+                    "http://www.dansblad.nl/brrecorder/, Ballroom & Latin Dances for Soprano Recorder",
+                    "http://www.dansblad.nl/grrecorder/, Greek Dances for Soprano Recorder"
+                ],
             }
         };
     }
 
-    getInfo() {
-        return this.info;
-    }
 }
 
 export { Recorder };
