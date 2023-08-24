@@ -25,16 +25,15 @@ function Login() {
         }}
       >
         <div>
-          <img style={{
-           
-            width:"250px",
-            color:"white",
-            position: "absolute",
-            top: "0",
-            left: "0",
-            border: '2px solid #0000FF',
-          
-          }}
+          <img
+            style={{
+              width: "250px",
+              color: "white",
+              position: "absolute",
+              top: "0",
+              left: "0",
+              border: "2px solid #0000FF",
+            }}
             class="mt-0 p-0 "
             src={logofpa}
             alt="Logo"
