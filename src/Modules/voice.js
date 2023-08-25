@@ -15,10 +15,14 @@ class Voice extends Instrument {
             generalInfo: this.gi,
             links: {
                 general: [
+                    "https://en.wikipedia.org/wiki/Singing, Singing - Wikipedia"
                 ],
                 beginners_lessons: [
+                    "https://www.youtube.com/watch?v=jog-nfLldRI, First lesson",
+                    "https://www.youtube.com/watch?v=0soSD_52nwM&list=PLPUqmSciJjKrH579Hl9iAKoT2fbm5wdHo"
                 ],
                 youtube: [
+                    "https://www.youtube.com/@SingeoOfficial, Singeo",
                     "https://www.youtube.com/shorts/uiX4aQEn5eE, Instruments Sound Imitation"
                 ],
             }

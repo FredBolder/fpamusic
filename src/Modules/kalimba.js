@@ -11,6 +11,7 @@ class Kalimba extends Instrument {
             generalInfo: this.gi,
             links: {
                 general: [
+                    "https://en.wikipedia.org/wiki/Mbira, Mbira - Wikipedia"
                 ],
                 beginners_lessons: [
                 ],
@@ -21,6 +22,10 @@ class Kalimba extends Instrument {
                 youtube: [
                 ],
                 books: [
+                    "https://www.dansblad.nl/rkalimba/, Relaxing Music for KALIMBA - 17 Keys, C Major Scale"
+                ],
+                software: [
+                    "https://www.dansblad.nl/kalimba/"
                 ],
             }
         };
