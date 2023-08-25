@@ -1,17 +1,24 @@
-import Login from "./Components/Login";
-import Profile from "./Components/Profile";
-import { useState, useContext } from "react";
-import { LoginContext } from "./Context/LoginContext";
-import { DropdownMenu } from "bootstrap";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import StartPage from "./Components/StartPage";
+import MainPage from "./Components/MainPage";
+import AboutPage from "./Components/AboutPage";
+import InstrumentsPage from "./Components/InstrumentsPage";
+import ContactPage from "./Components/ContactPage";
+import PageNotFound from "./Components/PageNotFound";
+
 function App() {
-  const [showProfile, setshowProfile] = useState(false);
-  const [username, setUsername] = useState("");
   return (
     <div className="App">
-      <LoginContext.Provider value={{ username, setUsername, setshowProfile }}>
-        {showProfile ? <Profile /> : <Login />}
-     
-      </LoginContext.Provider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<StartPage/>} />
+          <Route path="/main" exact element={<MainPage/>} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/instruments" element={<InstrumentsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
