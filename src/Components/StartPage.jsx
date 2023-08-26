@@ -1,14 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Instruments } from "../Modules/instruments";
-import "./assets/css/startPage.css";
+import "./assets/css/style.css";
 import Logo from "./Logo";
 
 function StartPage() {
   const navigate = useNavigate();
-  //const instruments = new Instruments();
-  //const drums = instruments.getInfo("drums");
-  //const info =drums.generalInfo;
 
   function getStartedClicked(e) {
     navigate("/main");
@@ -37,7 +33,7 @@ function StartPage() {
           }}
           className="fst-italic"
         >
-          "Its your right to enjoy Music"
+          "It is your right to enjoy music"
         </h1>
         <p
           style={{
@@ -57,7 +53,7 @@ function StartPage() {
             type="button"
             onClick={getStartedClicked}
           >
-            Get started
+            GET STARTED
           </button>
         </div>
       </div>

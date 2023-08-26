@@ -4,16 +4,20 @@ import { Kalimba } from "./kalimba.js";
 import { Recorder } from "./recorder.js";
 import { Voice } from "./voice.js";
 
+import imgDrums from "../Images/drums01.jpg";
+import imgKalimba from "../Images/drums01.jpg";
+import imgPiano from "../Images/piano01.jpg";
+import imgRecorder from "../Images/recorder01.jpg";
+import imgVoice from "../Images/drums01.jpg";
+
 class Instruments {
   constructor() { }
 
   getInfo(instrument) {
-    // The instrument parameter must have the type string.
     let result = null;
     if (typeof instrument !== "string") {
-      throw new Error("Not valid input, please try again!");
+      throw new Error("Invalid type");
     }
-    // The result must be case independent.
     const instrumentNameLower = instrument.toLowerCase();
 
     // This function returns the corresponding instrument object.
@@ -42,6 +46,33 @@ class Instruments {
       result = result.getInfo();
     }
 
+    return result;
+  }
+
+  getImage(instrument) {
+    let result = null;
+    const instrumentNameLower = instrument.toLowerCase();
+    switch (instrumentNameLower) {
+      case "drums":
+        result = imgDrums;
+        break;
+      case "kalimba":
+        result = imgKalimba;
+        break;
+      case "piano":
+        result = imgPiano;
+        break;
+      case "recorder":
+        result = imgRecorder;
+        break;
+      case "voice":
+        result = imgVoice;
+        break;
+      // Add more cases for other instruments.
+      default:
+        result = null;
+        break;
+    }
     return result;
   }
 

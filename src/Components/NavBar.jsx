@@ -1,21 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./assets/css/style.css";
 
 function NavBar() {
+  const listClass = "fs-3 list-unstyled d-flex justify-content-start gap-3";
+  const linkClass = "link-offset-2 link-underline link-underline-opacity-0 navlink";
+
   return (
     <div>
-      <ul className="navlist">
-        <li className="navlink">
-          <Link to="/main">Home</Link>
+      <ul className={listClass}>
+        <li>
+          <Link className={linkClass} to="/main">Home</Link>
         </li>
-        <li className="navlink">
-          <Link to="/instruments">Instruments</Link>
+        <li>
+          <Link className={linkClass} to="/instruments">Instruments</Link>
         </li>
-        <li className="navlink">
-          <Link to="/about">About</Link>
+        <li>
+          <Link className={linkClass} to="/about">About</Link>
         </li>
-        <li className="navlink">
-          <Link to="/contact">Contact</Link>
+        <li>
+          <Link className={linkClass} to="/contact">Contact</Link>
         </li>
       </ul>
     </div>

@@ -1,0 +1,22 @@
+body {
+  background-color: #212529; /* Bootstrap Dark */
+}
+
+.transparentRedButton {
+  background-color: rgba(255, 0, 55, 0.55);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.navlink {
+    color: #999999;
+}
+
+.navlink:hover {
+    color: #ffffff;
+}
+
