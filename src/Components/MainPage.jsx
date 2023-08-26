@@ -1,5 +1,5 @@
 import React from "react";
-import "./assets/css/mainPage.css";
+import "./assets/css/style.css";
 import NavBar from "./NavBar";
 import Logo from "./Logo";
 
@@ -7,7 +7,7 @@ function MainPage() {
   return (
     <>
       <div
-        className="position-relative"
+        className="position-relative bg-dark text-light"
         style={{
           width: "100%",
           height: "100vh",
@@ -17,8 +17,13 @@ function MainPage() {
           backgroundImage: `url(${require("../Images/mainpage.jpg")})`,
         }}
       >
-        <Logo />
-        <NavBar />
+        <header className="d-flex justify-content-start">
+          <Logo />
+          <div>
+            <NavBar />
+            <h1>Home</h1>
+          </div>
+        </header>
       </div>
     </>
   );

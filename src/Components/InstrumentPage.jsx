@@ -3,18 +3,18 @@ import Logo from "./Logo";
 import NavBar from "./NavBar";
 import "./assets/css/style.css";
 
-function ContactPage() {
+function InstrumentPage() {
   return (
     <div className="bg-dark text-light">
       <header className="d-flex justify-content-start">
         <Logo />
         <div>
           <NavBar />
-          <h1>Contact</h1>
+          <h1>Instrument</h1>
         </div>
       </header>
     </div>
   );
 }
 
-export default ContactPage;
+export default Instrument;
