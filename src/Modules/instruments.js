@@ -1,17 +1,13 @@
-import { Piano } from "./piano.js";
+import { Darbuka } from "./darbuka.js";
 import { Drums } from "./drums.js";
 import { Kalimba } from "./kalimba.js";
+import { Piano } from "./piano.js";
 import { Recorder } from "./recorder.js";
+import { Tongue_drum } from "./tongue_drum.js";
 import { Voice } from "./voice.js";
 
-import imgDrums from "../Images/drums01.jpg";
-import imgKalimba from "../Images/drums01.jpg";
-import imgPiano from "../Images/piano01.jpg";
-import imgRecorder from "../Images/recorder01.jpg";
-import imgVoice from "../Images/drums01.jpg";
 
 class Instruments {
-  constructor() { }
 
   getInfo(instrument) {
     let result = null;
@@ -22,6 +18,9 @@ class Instruments {
 
     // This function returns the corresponding instrument object.
     switch (instrumentNameLower) {
+      case "darbuka":
+        result = new Darbuka();
+        break;
       case "drums":
         result = new Drums();
         break;
@@ -34,10 +33,12 @@ class Instruments {
       case "recorder":
         result = new Recorder();
         break;
+      case "tongue drum":
+        result = new Tongue_drum();
+        break;
       case "voice":
         result = new Voice();
         break;
-      // Add more cases for other instruments.
       default:
         result = null;
         break;
@@ -49,35 +50,8 @@ class Instruments {
     return result;
   }
 
-  getImage(instrument) {
-    let result = null;
-    const instrumentNameLower = instrument.toLowerCase();
-    switch (instrumentNameLower) {
-      case "drums":
-        result = imgDrums;
-        break;
-      case "kalimba":
-        result = imgKalimba;
-        break;
-      case "piano":
-        result = imgPiano;
-        break;
-      case "recorder":
-        result = imgRecorder;
-        break;
-      case "voice":
-        result = imgVoice;
-        break;
-      // Add more cases for other instruments.
-      default:
-        result = null;
-        break;
-    }
-    return result;
-  }
-
   getInstrumentList() {
-    return ["Drums", "Kalimba", "Piano", "Recorder", "Voice"];
+    return ["Darbuka", "Drums", "Kalimba", "Piano", "Recorder", "Tongue drum", "Voice"];
   }
 
   getLinkCategories(links) {
