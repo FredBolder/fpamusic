@@ -12,8 +12,14 @@ body {
   margin-left: 30px;
 }
 
+.cardbackground {
+  background-color: #333333;
+  color: white;
+}
+
 .navlink {
     color: #999999;
+    text-decoration: none;
 }
 
 .navlink:hover {

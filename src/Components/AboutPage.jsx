@@ -13,6 +13,9 @@ function AboutPage() {
           <h1>About</h1>
         </div>
       </header>
+      <main className="ms-5 mt-5 fs-3">
+        <p>TODO: text from Priyanka</p>
+      </main>
     </div>
   );
 }
