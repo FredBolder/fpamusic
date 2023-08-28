@@ -14,7 +14,13 @@ function AboutPage() {
         </div>
       </header>
       <main className="ms-5 mt-5 fs-3">
-        <p>TODO: text from Priyanka</p>
+        <p>
+          FPA music is the music learning platform where you can learn different
+          instrument. Our Mission is to give music education available to
+          everyone. It should be free and fun learning. When you learn to play a
+          musical instrument, it will increase coordination skills provide
+          strategies to support mental health and well-being.
+        </p>
       </main>
     </div>
   );

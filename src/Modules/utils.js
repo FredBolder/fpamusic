@@ -62,6 +62,24 @@ class Utils {
     }
     return result;
   }
+
+  static async checkLinksValidity(linksArray) {
+    for (let i = 0; i < linksArray.length; i++) {
+      const link = linksArray[i];
+      try {
+        const response = await fetch(link);
+        const isValid = response.ok;
+        if (!isValid) {
+          Utils.log(`Link ${link} is invalid!`, 0);
+        } else {
+          //Utils.log(`Link ${link} is valid`, 0);
+        }
+      } catch (error) {
+        Utils.log(`Error checking link ${link}: ${error.message}`, 0);
+      }
+    }
+  }
+
 }
 
 export { Utils };

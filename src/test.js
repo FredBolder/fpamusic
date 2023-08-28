@@ -14,6 +14,7 @@ function test() {
   let instr = {};
   let instruments = {};
   let result = "";
+  let linksToCheck = [];
 
   instruments = new Instruments();
   instr = instruments.getInfo("dRuMs");
@@ -67,6 +68,28 @@ function test() {
     "a_b_c_d_e_f",
     Utils.spacesToUnderscores("a b c d e f")
   );
+
+  linksToCheck = [];
+  const instrumentList = instruments.getInstrumentList();
+  for (let i = 0; i < instrumentList.length; i++) {
+    const instrumentObj = instruments.getInfo(instrumentList[i]);
+    if (instrumentObj === null) {
+      Utils.log(`The ${instrumentList[i]} object does not exist!`);
+    } else {
+      const instrumentLinks = instrumentObj.links;
+      const linkCategories = instruments.getLinkCategories(instrumentLinks);
+      for (let j = 0; j < linkCategories.length; j++) {
+        const linkCategory = linkCategories[j];
+        const linkArr = instrumentLinks[linkCategory];
+        for (let k = 0; k < linkArr.length; k++) {
+          linksToCheck.push(Utils.getStringFromList(linkArr[k], 0));
+        }
+      }
+      
+    }
+  }
+  //Utils.checkLinksValidity(linksToCheck);
+
 
 }
 
