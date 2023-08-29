@@ -69,6 +69,25 @@ function test() {
     Utils.spacesToUnderscores("a b c d e f")
   );
 
+  checkResult(
+    "TEST 5A",
+    "This is test!",
+    Utils.removeChars("(This) [is] <test>!", "()[]<>")
+  );
+
+  checkResult(
+    "TEST 5B",
+    "Snaredrum",
+    Utils.removeChars("Snare drum", " ")
+  );
+
+  checkResult(
+    "TEST 5C",
+    "BCD",
+    Utils.removeChars("BCD", "A")
+  );
+
+
   linksToCheck = [];
   const instrumentList = instruments.getInstrumentList();
   for (let i = 0; i < instrumentList.length; i++) {
