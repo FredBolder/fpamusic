@@ -2,11 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./assets/css/style.css";
 import Logo from "./Logo";
+import Sounds from "../Sounds/Fur_Elise_Rock.mp3";
 
 function StartPage() {
   const navigate = useNavigate();
-
+  const audio = new Audio(Sounds);
   function getStartedClicked(e) {
+    audio.play();
     navigate("/main");
   }
 

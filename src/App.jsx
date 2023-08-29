@@ -4,6 +4,7 @@ import MainPage from "./Components/MainPage";
 import AboutPage from "./Components/AboutPage";
 import InstrumentsPage from "./Components/InstrumentsPage";
 import ContactPage from "./Components/ContactPage";
+import PrivacyPage from "./Components/PrivacyPage";
 import PageNotFound from "./Components/PageNotFound";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/instruments" element={<InstrumentsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
