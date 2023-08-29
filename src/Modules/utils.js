@@ -1,4 +1,36 @@
 class Utils {
+  static capitalize(str) {
+    let firstLetter = "";
+    let rest = "";
+    let result = "";
+
+    if (str === "") {
+      result = "";
+    } else {
+      firstLetter = str[0].toUpperCase();
+      rest = str.slice(1).toLowerCase();
+      result = firstLetter + rest;
+    }
+    return result;
+  }
+
+  static async checkLinksValidity(linksArray) {
+    for (let i = 0; i < linksArray.length; i++) {
+      const link = linksArray[i];
+      try {
+        const response = await fetch(link);
+        const isValid = response.ok;
+        if (!isValid) {
+          Utils.log(`Link ${link} is invalid!`, 0);
+        } else {
+          //Utils.log(`Link ${link} is valid`, 0);
+        }
+      } catch (error) {
+        Utils.log(`Error checking link ${link}: ${error.message}`, 0);
+      }
+    }
+  }
+
   static getStringFromList(str, idx) {
     // This function returns a string from a comma separated list in str (example: "Piano, Drums, Guitar").
     let result = ""; // The variable is storing the name with index(if available), if not it is returning an empty string.
@@ -28,31 +60,6 @@ class Utils {
     }
   }
 
-  static capitalize(str) {
-    let firstLetter = "";
-    let rest = "";
-    let result = "";
-
-    if (str === "") {
-      result = "";
-    } else {
-      firstLetter = str[0].toUpperCase();
-      rest = str.slice(1).toLowerCase();
-      result = firstLetter + rest;
-    }
-    return result;
-  }
-
-  static underscoresToSpaces(str) {
-    let changedString = str.split("_").join(" ");
-    return changedString;
-  }
-
-  static spacesToUnderscores(str) {
-    let changedString = str.split(" ").join("_");
-    return changedString;
-  }
-
   static partOfString(str, n) {
     let result = str;
 
@@ -63,21 +70,20 @@ class Utils {
     return result;
   }
 
-  static async checkLinksValidity(linksArray) {
-    for (let i = 0; i < linksArray.length; i++) {
-      const link = linksArray[i];
-      try {
-        const response = await fetch(link);
-        const isValid = response.ok;
-        if (!isValid) {
-          Utils.log(`Link ${link} is invalid!`, 0);
-        } else {
-          //Utils.log(`Link ${link} is valid`, 0);
-        }
-      } catch (error) {
-        Utils.log(`Error checking link ${link}: ${error.message}`, 0);
-      }
-    }
+  static removeChars(s, c) {
+    // This function removes the characters that are in the string c from the string s
+    // Example: removeChars("(Test)", "()") returns Test
+    return "";
+  }
+
+  static spacesToUnderscores(str) {
+    let changedString = str.split(" ").join("_");
+    return changedString;
+  }
+
+  static underscoresToSpaces(str) {
+    let changedString = str.split("_").join(" ");
+    return changedString;
   }
 
 }
