@@ -7,6 +7,7 @@ import Sounds from "../Sounds/Fur_Elise_Rock.mp3";
 function StartPage() {
   const navigate = useNavigate();
   const audio = new Audio(Sounds);
+
   function getStartedClicked(e) {
     audio.play();
     navigate("/main");
@@ -62,4 +63,5 @@ function StartPage() {
     </>
   );
 }
+
 export default StartPage;

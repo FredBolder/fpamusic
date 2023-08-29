@@ -10,7 +10,7 @@ function PrivacyPage() {
         <Logo />
         <div>
           <NavBar />
-          <h1>About</h1>
+          <h1>Privacy Statement</h1>
         </div>
       </header>
       <main className="ms-5 mt-5 fs-3">
