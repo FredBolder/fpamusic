@@ -12,7 +12,7 @@ function StartPage() {
 
   function getStartedClicked(e) {
     introMusic.play();
-    navigate("/main");
+    navigate("/instruments");
   }
 
   return (

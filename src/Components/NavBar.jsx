@@ -22,11 +22,6 @@ function NavBar() {
     <div>
       <ul className={listClass} onClick={navClicked}>
         <li>
-          <Link className={linkClass} to="/main">
-            Home
-          </Link>
-        </li>
-        <li>
           <Link className={linkClass} to="/instruments">
             Instruments
           </Link>

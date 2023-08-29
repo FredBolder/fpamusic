@@ -1,9 +1,11 @@
 import React from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 import { Instruments } from "../Modules/instruments";
 import { Utils } from "../Modules/utils";
+import AudioContext from "../Context/AudioContext";
 import imgDarbuka from "../Images/darbuka_1s.jpg";
 import imgDrums from "../Images/drums_1s.jpg";
 import imgKalimba from "../Images/kalimba_1s.jpg";
@@ -14,8 +16,15 @@ import imgVoice from "../Images/voice_1s.jpg";
 import "./assets/css/style.css";
 
 function InstrumentsPage() {
+  const { introMusic } = useContext(AudioContext);
   const instruments = new Instruments();
   const instrumentList = instruments.getInstrumentList();
+
+  function navClicked() {
+    if (introMusic !== null) {
+      introMusic.pause();
+    }
+  }
 
   function getImage(instrument) {
     let result = null;
@@ -67,7 +76,17 @@ function InstrumentsPage() {
                 className="card cardbackground"
                 style={{ width: "18rem" }}
               >
-                <img src={getImage(item)} className="card-img-top" alt={item} />
+                <Link
+                  to={`/instrument/${Utils.spacesToUnderscores(item.toLowerCase())}`}
+                  className="navlink"
+                  onClick={navClicked}
+                >
+                  <img
+                    src={getImage(item)}
+                    className="card-img-top"
+                    alt={item}
+                  />
+                </Link>
                 <div className="card-body">
                   <h5 className="card-title">{item}</h5>
                   <p className="card-text">
@@ -76,7 +95,11 @@ function InstrumentsPage() {
                       100
                     )}
                   </p>
-                  <Link to={`/instrument/${item.toLowerCase()}`} className="navlink">
+                  <Link
+                    to={`/instrument/${Utils.spacesToUnderscores(item.toLowerCase())}`}
+                    className="navlink"
+                    onClick={navClicked}
+                  >
                     Read more
                   </Link>
                 </div>

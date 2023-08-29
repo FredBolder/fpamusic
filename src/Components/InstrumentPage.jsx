@@ -16,10 +16,10 @@ import "./assets/css/style.css";
 
 function InstrumentPage() {
   const instruments = new Instruments();
-  const instrumentName = useParams().name;
+  const instrumentName = Utils.underscoresToSpaces(useParams().name);
   const info = instruments.getInfo(instrumentName);
   const linkCategories = instruments.getLinkCategories(info.links);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("general");
 
   function selectCategory(category) {
     setSelectedCategory(category === selectedCategory ? null : category);
@@ -74,7 +74,7 @@ function InstrumentPage() {
               className="img-fluid mb-4 rounded-4"
             />
             <h3>Description</h3>
-            <p className="fs-5 ">{info.generalInfo}</p>
+            <p className="fs-5">{info.generalInfo}</p>
             <div>
               <h3 className="mb-0">Resources</h3>
               <p className="text-secondary fs-6">
@@ -83,13 +83,13 @@ function InstrumentPage() {
               {linkCategories.map((category, index) => (
                 <div key={index}>
                   <div
-                    className="text-decoration-none navlink text-capitalize fw-bold fs-4"
+                    className="text-decoration-none navlink fw-bold fs-4"
                     onClick={() => selectCategory(category)}
                   >
-                    {Utils.capitalize(category)}
+                    {Utils.underscoresToSpaces(Utils.capitalize(category))}
                   </div>
                   {selectedCategory === category && (
-                    <ul className=" ml-0 p-0 text-white">
+                    <ul className="ml-0 p-0 text-white">
                       {info.links[category].map((linkWithDesc, linkIndex) => {
                         const link = Utils.getStringFromList(linkWithDesc, 0);
                         const description = Utils.getStringFromList(

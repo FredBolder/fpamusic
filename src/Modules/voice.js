@@ -15,7 +15,8 @@ class Voice extends Instrument {
             generalInfo: this.gi,
             links: {
                 general: [
-                    "https://en.wikipedia.org/wiki/Singing, Singing - Wikipedia"
+                    "https://en.wikipedia.org/wiki/Singing, Singing - Wikipedia",
+                    "https://www.wikihow.com/Sing"
                 ],
                 beginners_lessons: [
                     "https://www.youtube.com/watch?v=jog-nfLldRI, First lesson",
