@@ -82,7 +82,6 @@ function InstrumentsPage() {
               </div>
             );
           })}
-
         </div>
       </main>
     </div>

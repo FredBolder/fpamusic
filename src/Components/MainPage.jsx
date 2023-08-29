@@ -3,6 +3,7 @@ import "./assets/css/style.css";
 import NavBar from "./NavBar";
 import Logo from "./Logo";
 
+
 function MainPage() {
   return (
     <>
