@@ -1,7 +1,7 @@
 import React from "react";
-import "./assets/css/style.css";
 import NavBar from "./NavBar";
 import Logo from "./Logo";
+import "./assets/css/style.css";
 
 function MainPage() {
   return (

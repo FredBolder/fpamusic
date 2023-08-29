@@ -1,15 +1,17 @@
 import React from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import "./assets/css/style.css";
 import Logo from "./Logo";
-import Sounds from "../Sounds/Fur_Elise_Rock.mp3";
+import "./assets/css/style.css";
+import AudioContext from "../Context/AudioContext";
+
 
 function StartPage() {
   const navigate = useNavigate();
-  const audio = new Audio(Sounds);
+  const { introMusic } = useContext(AudioContext);
 
   function getStartedClicked(e) {
-    audio.play();
+    introMusic.play();
     navigate("/main");
   }
 

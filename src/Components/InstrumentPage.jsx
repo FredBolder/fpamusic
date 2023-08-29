@@ -3,10 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./assets/css/style.css";
 import { Instruments } from "../Modules/instruments";
-import { Instrument } from "../Modules/instrument";
 import { Utils } from "../Modules/utils";
 import imgDarbuka from "../Images/darbuka_1.jpg";
 import imgDrums from "../Images/drums_1.jpg";
@@ -15,13 +12,13 @@ import imgPiano from "../Images/piano_1.jpg";
 import imgRecorder from "../Images/recorder_1.jpg";
 import imgTongueDrum from "../Images/tongue_drum_1.jpg";
 import imgVoice from "../Images/voice_1.jpg";
+import "./assets/css/style.css";
 
 function InstrumentPage() {
   const instruments = new Instruments();
   const instrumentName = useParams().name;
   const info = instruments.getInfo(instrumentName);
   const linkCategories = instruments.getLinkCategories(info.links);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   function selectCategory(category) {
@@ -85,12 +82,12 @@ function InstrumentPage() {
               </p>
               {linkCategories.map((category, index) => (
                 <div key={index}>
-                  <a
+                  <div
                     className="text-decoration-none navlink text-capitalize fw-bold fs-4"
                     onClick={() => selectCategory(category)}
                   >
                     {Utils.capitalize(category)}
-                  </a>
+                  </div>
                   {selectedCategory === category && (
                     <ul className=" ml-0 p-0 text-white">
                       {info.links[category].map((linkWithDesc, linkIndex) => {

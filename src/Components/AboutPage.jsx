@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
-import "./assets/css/style.css";
 import { Link } from "react-router-dom";
+import "./assets/css/style.css";
 
 function AboutPage() {
   const linkClass =

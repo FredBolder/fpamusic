@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
-import "./assets/css/style.css";
 import { Instruments } from "../Modules/instruments";
 import { Utils } from "../Modules/utils";
 import imgDarbuka from "../Images/darbuka_1s.jpg";
@@ -12,6 +11,7 @@ import imgPiano from "../Images/piano_1s.jpg";
 import imgRecorder from "../Images/recorder_1s.jpg";
 import imgTongueDrum from "../Images/tongue_drum_1s.jpg";
 import imgVoice from "../Images/voice_1s.jpg";
+import "./assets/css/style.css";
 
 function InstrumentsPage() {
   const instruments = new Instruments();
