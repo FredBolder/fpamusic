@@ -11,10 +11,11 @@ class Tongue_drum extends Instrument {
         this.gi += "pentatonic scale is that no matter what you play, it mostly will sound ";
         this.gi += "good. The disadvantage is that for a lot of songs you need more notes, ";
         this.gi += "so if you want to play songs, it is better to have a tongue drum that is ";
-        this.gi += "tuned to a diatonic scale or even better a chromatic scale. ";
+        this.gi += "tuned to a diatonic scale or a chromatic scale. ";
         this.gi += "The tongues of a tongue drum are often numbered and there exist tabs with ";
         this.gi += "nummers which makes it easy to play music for people who can not read ";
         this.gi += "sheet music. ";
+        this.gi += "There are tongue drums that are tuneable by placing special tuning magnets.";
         this.gi += "";
         this.info = {
             name: "Tongue drum",
