@@ -68,7 +68,7 @@ function InstrumentsPage() {
         </div>
       </header>
       <main>
-        <div className="ms-4 me-4 mt-3 d-flex gap-3 flex-wrap">
+        <div className="ms-3 me-4 mt-4 d-flex gap-3 flex-wrap justify-content-center justify-content-md-start ">
           {instrumentList.map((item) => {
             return (
               <div
@@ -77,7 +77,9 @@ function InstrumentsPage() {
                 style={{ width: "18rem" }}
               >
                 <Link
-                  to={`/instrument/${Utils.spacesToUnderscores(item.toLowerCase())}`}
+                  to={`/instrument/${Utils.spacesToUnderscores(
+                    item.toLowerCase()
+                  )}`}
                   className="navlink"
                   onClick={navClicked}
                 >
@@ -96,7 +98,9 @@ function InstrumentsPage() {
                     )}
                   </p>
                   <Link
-                    to={`/instrument/${Utils.spacesToUnderscores(item.toLowerCase())}`}
+                    to={`/instrument/${Utils.spacesToUnderscores(
+                      item.toLowerCase()
+                    )}`}
                     className="navlink"
                     onClick={navClicked}
                   >
