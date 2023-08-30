@@ -3,7 +3,7 @@ import { Instrument } from "./instrument.js";
 class Darbuka extends Instrument {
     constructor() {
         super();
-        this.gi = "The Darbuka is a goblet shaped drum. It is known under many other ";
+        this.gi = "A darbuka is a goblet shaped drum. It is known under many other ";
         this.gi += "names like globet drum, doumbek and τουμπερλέκι (toumperleki). ";
         this.gi += "There are many different possible strokes, but the main strokes are ";
         this.gi += "called [doum] (or dum), [tek] and [ka].";
