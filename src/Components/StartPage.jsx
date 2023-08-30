@@ -5,7 +5,6 @@ import Logo from "./Logo";
 import "./assets/css/style.css";
 import AudioContext from "../Context/AudioContext";
 
-
 function StartPage() {
   const navigate = useNavigate();
   const { introMusic } = useContext(AudioContext);
@@ -16,53 +15,52 @@ function StartPage() {
   }
 
   return (
-    <>
-      <div
-        className="position-relative"
+    <body
+      style={{
+        width: "100%",
+        height: "100vh",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        position: "absolute",
+        backgroundImage: `url(${require("../Images/startpage.jpg")})`,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+      }}
+    >
+      <header style={{ position: "absolute", top: "0", left: "0" }}>
+        <Logo />
+      </header>
+      <main
+        className="p-4 text-white"
         style={{
-          width: "100%",
-          height: "100vh",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          position: "absolute",
-          backgroundImage: `url(${require("../Images/startpage.jpg")})`,
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)",
+          position: "relative",
+          bottom: "160px",
         }}
       >
-        <Logo />
-        <h1
-          style={{
-            color: "White",
-            position: "absolute",
-            bottom: "140px",
-            left: "140px",
-          }}
-          className="fst-italic"
-        >
-          "It is your right to enjoy music"
-        </h1>
-        <p
-          style={{
-            color: "White",
-            position: "absolute",
-            bottom: "80px",
-            left: "200px",
-          }}
-          className="fst-italic"
-        >
-          This website was made with a purpose of making music <br />
-          education available without any hidden cost
-        </p>
-        <div className="d-grid gap-2 col-6 mx-auto p-2 position-absolute bottom-0 start-0 mb-4 mx-2">
-          <button
-            className="btn btn-danger transparentredBtn"
-            type="button"
-            onClick={getStartedClicked}
-          >
-            GET STARTED
-          </button>
+        <div style={{ maxWidth: "900px", marginLeft: "10px" }}>
+          <div>
+            <h1 className="fw-bold mb-2">It is your right to enjoy music</h1>
+            <p className="fs-5 ">
+              Elevate your musical skills and knowledge. Our website provides a
+              range of resources, empowering beginners and experienced musicians
+              alike.
+            </p>
+          </div>
+          <div>
+            <button
+              className="btn-custom"
+              type="button"
+              onClick={getStartedClicked}
+              style={{ width: "300px" }}
+            >
+              GET STARTED
+            </button>
+          </div>
         </div>
-      </div>
-    </>
+      </main>
+    </body>
   );
 }
 

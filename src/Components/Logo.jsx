@@ -6,9 +6,9 @@ function Logo() {
     <span>
       <img
         style={{
-          width: "100px",
+          width: "80px",
         }}
-        className="mt-0 me-5 p-0"
+        className="mt-2 ms-2 me-4"
         src={logo}
         alt="Logo"
       />
