@@ -68,7 +68,7 @@ function InstrumentsPage() {
         </div>
       </header>
       <main>
-        <div className="mt-3 d-flex gap-3 flex-wrap">
+        <div className="ms-4 me-4 mt-3 d-flex gap-3 flex-wrap">
           {instrumentList.map((item) => {
             return (
               <div

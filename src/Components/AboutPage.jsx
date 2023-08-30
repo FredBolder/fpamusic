@@ -16,7 +16,7 @@ function AboutPage() {
           <h1>About</h1>
         </div>
       </header>
-      <main className="ms-5 mt-5 fs-3">
+      <main className="ms-4 me-4 mt-5 fs-3">
         <p>
           FPA music is the music learning platform where you can learn different
           instrument. Our Mission is to give music education available to
@@ -25,7 +25,7 @@ function AboutPage() {
           strategies to support mental health and well-being.
         </p>
       </main>
-      <footer className="ms-5 mt-5 fs-3">
+      <footer className="ms-4 me-4 mt-5 fs-3">
         <Link className={linkClass} to="/privacy">
           Here
         </Link>{" "}

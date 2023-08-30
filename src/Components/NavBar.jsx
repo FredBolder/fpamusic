@@ -8,7 +8,7 @@ function NavBar() {
   const { introMusic } = useContext(AudioContext);
 
   const listClass =
-    "fs-3 list-unstyled d-flex justify-content-start gap-3 flex-wrap";
+    "fs-3 list-unstyled d-flex justify-content-start column-gap-3 row-gap-2 flex-wrap";
   const linkClass =
     "link-offset-2 link-underline link-underline-opacity-0 navlink";
 

@@ -89,7 +89,7 @@ function InstrumentPage() {
                     {Utils.underscoresToSpaces(Utils.capitalize(category))}
                   </div>
                   {selectedCategory === category && (
-                    <ul className="ml-0 p-0 text-white">
+                    <ul className="list-unstyled ml-0 p-0 text-white">
                       {info.links[category].map((linkWithDesc, linkIndex) => {
                         const link = Utils.getStringFromList(linkWithDesc, 0);
                         const description = Utils.getStringFromList(
@@ -98,7 +98,7 @@ function InstrumentPage() {
                         );
                         return (
                           <li
-                            className="d-flex align-items-center justify-content-start "
+                            className="pt-1 pb-1 d-flex align-items-center justify-content-start column-gap-3 flex-wrap"
                             key={linkIndex}
                           >
                             <a
@@ -109,9 +109,9 @@ function InstrumentPage() {
                             >
                               {link}
                             </a>
-                            <p className="text-white mt-3 ms-3 fs-5">
+                            <div className="text-white fs-5">
                               {Utils.capitalize(description.trim())}
-                            </p>
+                            </div>
                           </li>
                         );
                       })}

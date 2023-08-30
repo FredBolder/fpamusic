@@ -6,7 +6,7 @@ class Darbuka extends Instrument {
         this.gi = "The Darbuka is a goblet shaped drum. It is known under many other ";
         this.gi += "names like globet drum, doumbek and τουμπερλέκι (toumperleki). ";
         this.gi += "There are many different possible strokes, but the main strokes are ";
-        this.gi += "called doum (or dum), tek and ka.";
+        this.gi += "called [doum] (or dum), [tek] and [ka].";
         this.gi += "The doum is the bass sound that is made by hitting the center of the ";
         this.gi += "membrane with your strong hand (closed fingers). The tek is the high ";
         this.gi += "sound that is made by hitting the edge with your weak hand (fingers ";

@@ -13,7 +13,7 @@ function PrivacyPage() {
           <h1>Privacy Statement</h1>
         </div>
       </header>
-      <main className="ms-5 mt-5 fs-3">
+      <main className="ms-4 me-4 mt-5 fs-3">
         <p>
           Welcome to FPAmusic Website. This Privacy Statement explains how we
           handle information on our purely informational website. Information
