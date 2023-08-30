@@ -18,18 +18,32 @@ function AboutPage() {
       </header>
       <main className="ms-4 me-4 mt-5 fs-3">
         <p>
-          FPA music is the music learning platform where you can learn different
-          instrument. Our Mission is to give music education available to
-          everyone. It should be free and fun learning. When you learn to play a
-          musical instrument, it will increase coordination skills provide
-          strategies to support mental health and well-being.
+          FPA Music is the music learning platform where you can learn different
+          instrument. FPA stands for<span className="fw-bold"> F</span>red,{" "}
+          <span className="fw-bold"> P</span>riyanka and{" "}
+          <span className="fw-bold"> A</span>
+          ntonio as we are three team member working on it. Our mission is to
+          give music education available to everyone. It should be free and fun
+          learning. When you learn to play different musical instrument, it will
+          increase your coordination skills, makes you creative and builds your
+          confidence.
         </p>
       </main>
       <footer className="ms-4 me-4 mt-5 fs-3">
+        {" "}
+        Here you can read our{" "}
         <Link className={linkClass} to="/privacy">
-          Here
-        </Link>{" "}
-        you can read our privacy statement.
+          privacy statement.
+        </Link>
+        <p className="me-3">
+          <h2 className="fw-bold mt-5">Disclaimer</h2>
+          The information provided on this website is intended for general
+          informational purposes only. While we make every effort to ensure the
+          accuracy and reliability of the information presented, we cannot
+          guarantee that the website will be error-free or uninterrupted. We do
+          not accept any liability for any actions taken or decisions made based
+          on the information provided on this website.
+        </p>
       </footer>
     </div>
   );

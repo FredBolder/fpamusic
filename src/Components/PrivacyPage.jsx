@@ -2,6 +2,10 @@ import React from "react";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 import "./assets/css/style.css";
+import { Link } from "react-router-dom";
+
+const linkClass =
+  "link-offset-2 link-underline link-underline-opacity-0 navlink";
 
 function PrivacyPage() {
   return (
@@ -15,16 +19,15 @@ function PrivacyPage() {
       </header>
       <main className="ms-4 me-4 mt-5 fs-3">
         <p>
-          Welcome to FPAmusic Website. This Privacy Statement explains how we
-          handle information on our purely informational website. Information
-          Collection We do not collect any personal information from visitors to
-          our website. External Links Our website may provide links to external
-          websites. We are not responsible for the privacy practices or content
-          of those sites. Please review their respective privacy policies.
-          Changes to This Privacy Statement We may update this Privacy Statement
-          to reflect changes in our practices or for legal reasons. Updates will
-          be posted on our website. Contact Us For any questions about our
-          Privacy Statement, please reach out to us at our contact Page.
+          Welcome to FPA Music. We do not collect any personal information from
+          visitors to our website. Our website contain external links. We are
+          not responsible for the privacy policies or content of those sites.
+          Please read their privacy statement. We reserve the right to change
+          this privacy statement from time to time.{" "}
+          <Link className={linkClass} to="/contact">
+            Contact us
+          </Link>{" "}
+          for any questions or request.
         </p>
       </main>
     </div>

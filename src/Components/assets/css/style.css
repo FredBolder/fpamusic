@@ -18,11 +18,10 @@ body {
 }
 
 .navlink {
-    color: #999999;
-    text-decoration: none;
+  color: #999999;
+  text-decoration: none;
 }
 
 .navlink:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
-
