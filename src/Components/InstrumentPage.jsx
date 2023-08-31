@@ -5,6 +5,7 @@ import Logo from "./Logo";
 import NavBar from "./NavBar";
 import { Instruments } from "../Modules/instruments";
 import { Utils } from "../Modules/utils";
+import imgBongos from "../Images/bongos_1.jpg";
 import imgDarbuka from "../Images/darbuka_1.jpg";
 import imgDrums from "../Images/drums_1.jpg";
 import imgKalimba from "../Images/kalimba_1.jpg";
@@ -32,6 +33,9 @@ function InstrumentPage() {
     let result = null;
     const instrumentNameLower = instrument.toLowerCase();
     switch (instrumentNameLower) {
+      case "bongos":
+        result = imgBongos;
+        break;
       case "darbuka":
         result = imgDarbuka;
         break;

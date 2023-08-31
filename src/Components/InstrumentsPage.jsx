@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import { Instruments } from "../Modules/instruments";
 import { Utils } from "../Modules/utils";
 import AudioContext from "../Context/AudioContext";
+import imgBongos from "../Images/bongos_1s.jpg";
 import imgDarbuka from "../Images/darbuka_1s.jpg";
 import imgDrums from "../Images/drums_1s.jpg";
 import imgKalimba from "../Images/kalimba_1s.jpg";
@@ -30,6 +31,9 @@ function InstrumentsPage() {
     let result = null;
     const instrumentNameLower = instrument.toLowerCase();
     switch (instrumentNameLower) {
+      case "bongos":
+        result = imgBongos;
+        break;
       case "darbuka":
         result = imgDarbuka;
         break;
