@@ -64,16 +64,18 @@ class Utils {
     let result = str;
 
     if (result.length > n) {
-      result = result.slice(0, (n + 1));
+      result = result.slice(0, n + 1);
       result += "...";
     }
     return result;
   }
 
   static removeChars(s, c) {
-    // This function removes the characters that are in the string c from the string s
-    // Example: removeChars("(Test)", "()") returns Test
-    return "";
+    let result = s;
+    for (let i = 0; i < c.length; i++) {
+      result = result.replace(c[i], "");
+    }
+    return result;
   }
 
   static spacesToUnderscores(str) {
@@ -85,7 +87,6 @@ class Utils {
     let changedString = str.split("_").join(" ");
     return changedString;
   }
-
 }
 
 export { Utils };
