@@ -85,8 +85,7 @@ function InstrumentsPage() {
           <NavBar />
           <h1>Instruments</h1>
           <div>
-            <span className="me-2">Search</span>
-            <input type="text" value={search} onChange={searchChanged} />
+            <input  className="search" placeholder="Search" type="text" value={search} onChange={searchChanged} />
           </div>
         </div>
       </header>

@@ -32,3 +32,14 @@ body {
   color: #ffffffdb;
 }
 
+.search {
+  background-color:#333333;
+  color: white;
+  border-radius: 6px;
+}
+
+.search:hover {
+  background-color: #404040;
+}
+
+
