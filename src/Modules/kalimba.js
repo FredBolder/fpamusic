@@ -26,6 +26,8 @@ class Kalimba extends Instrument {
                     "https://www.wikihow.com/Play-the-Kalimba"
                 ],
                 beginners_lessons: [
+                    "https://www.youtube.com/watch?v=knWemwE3ZZU",
+                    "https://www.youtube.com/playlist?list=PL6w-y_q2Tsl8ivqx_LuBtnI6kw4QpUy7Q"
                 ],
                 articles: [
                 ],

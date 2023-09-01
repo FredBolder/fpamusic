@@ -3,8 +3,7 @@ import { Instrument } from "./instrument.js";
 class Tongue_drum extends Instrument {
     constructor() {
         super();
-        this.gi = "Tongue drum";
-        this.gi += "A steel tongue drum is a tuned drum that procudes a bell-like sound when ";
+        this.gi = "A steel tongue drum is a tuned drum that procudes a [bell-like sound♫] when ";
         this.gi += "played with mallets or fingers. It is also called tank drum, hank drum or ";
         this.gi += "even UFO drum (because of the shape). ";
         this.gi += "Tongue drums are often tuned to a pentatonic scale. The advantage of a ";
@@ -27,7 +26,11 @@ class Tongue_drum extends Instrument {
                     "https://dorhymi.com/how-to-play-steel-tongue-drum/"
                 ],
                 beginners_lessons: [
-                    "https://www.youtube.com/watch?v=VT6l8pl7xdQ"
+                    "https://www.youtube.com/watch?v=VT6l8pl7xdQ",
+                    "https://www.youtube.com/playlist?list=PLafvar4aRJ3OEdSUwFQp0WVbGcqZy2Lv5"
+                ],
+                songs: [
+                    "https://www.youtube.com/playlist?list=PLfL-t2IoaOKjBI8e1Kx7tg9Vx60KvtsWu"
                 ],
                 articles: [
                 ],
