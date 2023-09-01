@@ -74,8 +74,17 @@ class Utils {
   }
 
   static getWordBetweenBrackets(text, position) {
+    let word = "";
+    let startIndex = text.lastIndexOf("[", position);
+    let endIndex = text.indexOf("]", position);
 
-    return "tek";
+    if (startIndex !== -1 && endIndex !== -1) {
+      word = text.slice(startIndex + 1, endIndex);
+      if (word.includes("]") || word.includes("[")) {
+        word = "";
+      }
+    }
+    return word;
   }
 
   static log(msg, mode = 0) {
@@ -98,7 +107,7 @@ class Utils {
     let result = str;
 
     if (result.length > n) {
-      result = result.slice(0, (n + 1));
+      result = result.slice(0, n + 1);
       result += "...";
     }
     return result;
@@ -120,7 +129,6 @@ class Utils {
     let changedString = str.split("_").join(" ");
     return changedString;
   }
-
 }
 
 export { Utils };
