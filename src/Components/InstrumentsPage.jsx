@@ -115,10 +115,10 @@ function InstrumentsPage() {
                   <div className="card-body">
                     <h5 className="card-title">{item}</h5>
                     <p className="card-text">
-                      {Utils.partOfString(
+                      {Utils.removeChars(Utils.partOfString(
                         instruments.getInfo(item).generalInfo,
                         100
-                      )}
+                      ), "[]")}
                     </p>
                     <Link
                       to={`/instrument/${Utils.spacesToUnderscores(
