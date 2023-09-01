@@ -114,10 +114,12 @@ class Utils {
   }
 
   static removeChars(s, c) {
-    // This function removes the characters that are in the string c from the string s
-    // Example 1: removeChars("(Test)", "()") returns Test
-    // Example 2: removeChars("*** Priyanka ***", " *") returns Priyanka
-    return "";
+    let result = s;
+    
+    for (let i = 0; i < c.length; i++) {
+      result = result.replace(c[i], "");
+    }
+    return result;
   }
 
   static spacesToUnderscores(str) {
