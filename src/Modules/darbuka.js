@@ -28,7 +28,8 @@ class Darbuka extends Instrument {
                     "https://www.youtube.com/watch?v=O9GNdshDWsE",
                     "https://www.youtube.com/watch?v=Sbjs39b_MT8"
                 ],
-                articles: [
+                patterns: [
+                    "https://www.oscarvandillen.com/projects/world_music/darbuka_patterns/"
                 ],
                 youtube: [
                     "https://www.youtube.com/watch?v=eLpablRicOc&list=PLqGdXZpmhZrw1FkmhxeqCgdBb2u7D6PjT"
