@@ -69,6 +69,10 @@ function InstrumentsPage() {
         <div>
           <NavBar />
           <h1>Instruments</h1>
+          <div>
+            <span className="me-2">Search</span>
+            <input type="text" />
+          </div>
         </div>
       </header>
       <main>
