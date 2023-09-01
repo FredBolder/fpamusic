@@ -16,6 +16,12 @@ import imgVoice from "../Images/voice_1.jpg";
 import sndDoum from "../Sounds/doum.wav";
 import sndKa from "../Sounds/ka.wav";
 import sndTek from "../Sounds/tek.wav";
+import sndBassDrum from "../Sounds/bass_drum.wav";
+import sndSnareDrum from "../Sounds/bass_drum.wav";
+import sndTomDrum from "../Sounds/mid_tom.wav";
+import sndHiHat from "../Sounds/closed_hi-hat.wav";
+import sndCrashCymbal from "../Sounds/crash_cymbal.wav";
+import sndRideCymbal from "../Sounds/ride_cymbal.wav";
 import "./assets/css/style.css";
 
 function InstrumentPage() {
@@ -77,6 +83,25 @@ function InstrumentPage() {
       case "tek":
         result = sndTek;
         break;
+      case "bass drum":
+        result = sndBassDrum;
+        break;
+      case "snare drum":
+        result = sndSnareDrum;
+        break;
+      case "toms":
+        result = sndTomDrum;
+        break;
+      case "hi-hat":
+        result = sndHiHat;
+        break;
+      case "crash cymbal":
+        result = sndCrashCymbal;
+        break;
+      case "ride cymbal":
+        result = sndRideCymbal;
+        break;
+
       default:
         result = null;
         break;
