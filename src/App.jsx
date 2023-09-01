@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StartPage from "./Components/StartPage";
 import AboutPage from "./Components/AboutPage";
@@ -9,6 +10,10 @@ import PageNotFound from "./Components/PageNotFound";
 import GlobalState from "./Context/GlobalState";
 
 function App() {
+  useEffect(() => {
+    document.title = "FPA Music";
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>

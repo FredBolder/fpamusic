@@ -1,3 +1,4 @@
+import { Bongos } from "./bongos.js";
 import { Darbuka } from "./darbuka.js";
 import { Drums } from "./drums.js";
 import { Kalimba } from "./kalimba.js";
@@ -18,6 +19,9 @@ class Instruments {
 
     // This function returns the corresponding instrument object.
     switch (instrumentNameLower) {
+      case "bongos":
+        result = new Bongos();
+        break;
       case "darbuka":
         result = new Darbuka();
         break;
@@ -51,7 +55,7 @@ class Instruments {
   }
 
   getInstrumentList() {
-    return ["Darbuka", "Drums", "Kalimba", "Piano", "Recorder", "Tongue drum", "Voice"];
+    return ["Bongos", "Darbuka", "Drums", "Kalimba", "Piano", "Recorder", "Tongue drum", "Voice"];
   }
 
   getLinkCategories(links) {

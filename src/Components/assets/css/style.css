@@ -2,16 +2,6 @@ body {
   background-color: #212529; /* Bootstrap Dark #212529 */
 }
 
-.transparentRedButton {
-  background-color: rgba(255, 0, 55, 0.55);
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  margin-left: 30px;
-}
-
 .cardbackground {
   background-color: #333333;
   color: white;
@@ -25,3 +15,31 @@ body {
 .navlink:hover {
   color: #ffffff;
 }
+
+.btn-custom {
+  background-color: #ff0606b5;
+  color: #ffffffef;
+  border-radius: 5px;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 500;
+}
+
+.btn-custom:hover {
+  background-color: #ff060693;
+  color: #ffffffdb;
+}
+
+.search {
+  background-color:#333333;
+  color: white;
+  border-radius: 6px;
+}
+
+.search:hover {
+  background-color: #404040;
+}
+
+

@@ -31,6 +31,35 @@ class Utils {
     }
   }
 
+  static getCaretPosition(editableDiv) {
+    // https://stackoverflow.com/questions/3972014/get-contenteditable-caret-position
+    // Changed the code to the new JavaScript standard
+    let caretPos = 0;
+    let sel;
+    let range;
+
+    if (window.getSelection) {
+      sel = window.getSelection();
+      if (sel.rangeCount) {
+        range = sel.getRangeAt(0);
+        if (range.commonAncestorContainer.parentNode === editableDiv) {
+          caretPos = range.endOffset;
+        }
+      }
+    } else if (document.selection && document.selection.createRange) {
+      range = document.selection.createRange();
+      if (range.parentElement() === editableDiv) {
+        let tempEl = document.createElement("span");
+        editableDiv.insertBefore(tempEl, editableDiv.firstChild);
+        let tempRange = range.duplicate();
+        tempRange.moveToElementText(tempEl);
+        tempRange.setEndPoint("EndToEnd", range);
+        caretPos = tempRange.text.length;
+      }
+    }
+    return caretPos;
+  }
+
   static getStringFromList(str, idx) {
     // This function returns a string from a comma separated list in str (example: "Piano, Drums, Guitar").
     let result = ""; // The variable is storing the name with index(if available), if not it is returning an empty string.
@@ -42,6 +71,20 @@ class Utils {
     }
 
     return result;
+  }
+
+  static getWordBetweenBrackets(text, position) {
+    let word = "";
+    let startIndex = text.lastIndexOf("[", position);
+    let endIndex = text.indexOf("]", position);
+
+    if (startIndex !== -1 && endIndex !== -1) {
+      word = text.slice(startIndex + 1, endIndex);
+      if (word.includes("]") || word.includes("[")) {
+        word = "";
+      }
+    }
+    return word;
   }
 
   static log(msg, mode = 0) {
@@ -72,6 +115,7 @@ class Utils {
 
   static removeChars(s, c) {
     let result = s;
+    
     for (let i = 0; i < c.length; i++) {
       result = result.replace(c[i], "");
     }

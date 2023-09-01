@@ -3,21 +3,29 @@ import { Instrument } from "./instrument.js";
 class Recorder extends Instrument {
     constructor() {
         super();
-        this.gi = "A recorder is a woodwind instrument. ";
-        this.gi += "There are two fingering systems: Baroque (English) and German. ";
+        this.gi = "A recorder is a wind instrument. ";
+        this.gi += "They can be made of wood or plastic. Plastic recorders are cheaper ";
+        this.gi += "and easy to clean. Wooden recorders sound a little better, but they ";
+        this.gi += "are affected by humidity. ";
+        this.gi += "There are two main fingering systems: Baroque (English) and German. ";
         this.gi += "The German system was later created to make it easier for beginners ";
         this.gi += "to learn. You can recognize a German recorder by the small fifth ";
         this.gi += "hole that is smaller than the fourth hole. ";
-        this.gi += "The scale of C is very easy to play on a German recorder, ";
+        this.gi += "The scale of C is very easy to play on a soprano German recorder, ";
         this.gi += "but the fingering for sharps and flats is often more difficult. ";
         this.gi += "You might think that you can not tune a recorder, but if you ";
         this.gi += "blow harder the pitch will be higher and if you blow softer the ";
         this.gi += "pitch will be lower. You can also lower the pitch by pulling the ";
         this.gi += "mouthpiece a little out. ";
+        this.gi += "If you close with your fingers all holes of a soprano recorder, ";
+        this.gi += "you will get the low C, but if you half close the bell hole with ";
+        this.gi += "your knee, you will get the B before that C! ";
+        this.gi += "There are also pentatonic recorders that are very easy to play, ";
+        this.gi += "but of course with (mostly) only 7 notes they are very limited. ";
         this.gi += "";
         this.info = {
             name: "Recorder",
-            category: "Woodwind",
+            category: "Wind",
             generalInfo: this.gi,
             links: {
                 general: [
@@ -29,9 +37,14 @@ class Recorder extends Instrument {
                     "https://www.youtube.com/playlist?list=PLYVfQ47cCHaCRrSS8jeNptYyXGx3DqPtH",
                     "https://www.youtube.com/watch?v=z4tLQ09_YZE, All notes"
                 ],
+                songs: 
+                [
+                    "https://www.youcanplayit.com/"
+                ],
                 articles: [
                     "https://professionalcomposers.com/flute-vs-recorder/, Flute vs Recorder",
-                    "https://hub.yamaha.com/winds/wood/recorders-baroque-vs-german/, Baroque vs German"
+                    "https://hub.yamaha.com/winds/wood/recorders-baroque-vs-german/, Baroque vs German",
+                    "https://aswltd.com/finger.htm, Recorder Fingering Systems"
                 ],
                 fingering: [
                     "https://americanrecorder.org/recorder_fingering_charts.php"
@@ -40,7 +53,10 @@ class Recorder extends Instrument {
                     "https://www.doctormusik.com/apps-and-games/virtual-recorder/"
                 ],
                 youtube: [
-                    "https://www.youtube.com/@Team_Recorder"
+                    "https://www.youtube.com/@Team_Recorder",
+                    "https://www.youtube.com/shorts/mbX59xpidW4",
+                    "https://www.youtube.com/watch?v=hFnKmqAOmBs, Introducing the Baroque Recorder",
+                    "https://www.youtube.com/watch?v=iw0E2xP57UA, Plastic vs Wood"
                 ],
                 books: [
                     "http://www.dansblad.nl/brrecorder/, Ballroom & Latin Dances for Soprano Recorder",

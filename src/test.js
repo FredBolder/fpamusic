@@ -87,6 +87,29 @@ function test() {
     Utils.removeChars("BCD", "A")
   );
 
+  checkResult(
+    "TEST 6A",
+    "bass drum",
+    Utils.getWordBetweenBrackets("This is a [bass drum]", 11)
+  );
+
+  checkResult(
+    "TEST 6B",
+    "bass drum",
+    Utils.getWordBetweenBrackets("This is a [bass drum]!", 20)
+  );
+
+  checkResult(
+    "TEST 6C",
+    "tek",
+    Utils.getWordBetweenBrackets("The [doum], [tek] and [ka] are the main strokes.", 14)
+  );
+
+  checkResult(
+    "TEST 6D",
+    "",
+    Utils.getWordBetweenBrackets("The [doum], [tek] and [ka] are the main strokes.", 11)
+  );
 
   linksToCheck = [];
   const instrumentList = instruments.getInstrumentList();

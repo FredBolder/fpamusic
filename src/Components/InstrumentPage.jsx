@@ -5,13 +5,23 @@ import Logo from "./Logo";
 import NavBar from "./NavBar";
 import { Instruments } from "../Modules/instruments";
 import { Utils } from "../Modules/utils";
+import imgBongos from "../Images/bongos_1.jpg";
 import imgDarbuka from "../Images/darbuka_1.jpg";
 import imgDrums from "../Images/drums_1.jpg";
 import imgKalimba from "../Images/kalimba_1.jpg";
 import imgPiano from "../Images/piano_1.jpg";
-import imgRecorder from "../Images/recorder_1.jpg";
+import imgRecorder from "../Images/recorder_2_text.jpg";
 import imgTongueDrum from "../Images/tongue_drum_1.jpg";
 import imgVoice from "../Images/voice_1.jpg";
+import sndDoum from "../Sounds/doum.wav";
+import sndKa from "../Sounds/ka.wav";
+import sndTek from "../Sounds/tek.wav";
+import sndBassDrum from "../Sounds/bass_drum.wav";
+import sndSnareDrum from "../Sounds/snare_drum.wav";
+import sndTomDrum from "../Sounds/mid_tom.wav";
+import sndHiHat from "../Sounds/closed_hi-hat.wav";
+import sndCrashCymbal from "../Sounds/crash_cymbal.wav";
+import sndRideCymbal from "../Sounds/ride_cymbal.wav";
 import "./assets/css/style.css";
 
 function InstrumentPage() {
@@ -29,6 +39,9 @@ function InstrumentPage() {
     let result = null;
     const instrumentNameLower = instrument.toLowerCase();
     switch (instrumentNameLower) {
+      case "bongos":
+        result = imgBongos;
+        break;
       case "darbuka":
         result = imgDarbuka;
         break;
@@ -56,6 +69,58 @@ function InstrumentPage() {
     }
     return result;
   }
+
+  function getSound(snd) {
+    let result = null;
+    const sndLower = snd.toLowerCase();
+    switch (sndLower) {
+      case "doum":
+        result = sndDoum;
+        break;
+      case "ka":
+        result = sndKa;
+        break;
+      case "tek":
+        result = sndTek;
+        break;
+      case "bass drum":
+        result = sndBassDrum;
+        break;
+      case "snare drum":
+        result = sndSnareDrum;
+        break;
+      case "toms":
+        result = sndTomDrum;
+        break;
+      case "hi-hat":
+        result = sndHiHat;
+        break;
+      case "crash cymbal":
+        result = sndCrashCymbal;
+        break;
+      case "ride cymbal":
+        result = sndRideCymbal;
+        break;
+
+      default:
+        result = null;
+        break;
+    }
+    return result;
+  }
+
+  function descriptionClicked(e) {
+    const p = Utils.getCaretPosition(e.target);
+    const word = Utils.getWordBetweenBrackets(info.generalInfo, p);
+    if (word !== "") {
+      const snd = getSound(word);
+      if (snd !== null) {
+        const audio = new Audio(snd);
+        audio.play();
+      }
+    }
+  }
+
   return (
     <div className="bg-dark text-light">
       <header className="d-flex justify-content-start">
@@ -74,7 +139,9 @@ function InstrumentPage() {
               className="img-fluid mb-4 rounded-4"
             />
             <h3>Description</h3>
-            <p className="fs-5">{info.generalInfo}</p>
+            <p className="fs-5" onClick={descriptionClicked}>
+              {info.generalInfo}
+            </p>
             <div>
               <h3 className="mb-0">Resources</h3>
               <p className="text-secondary fs-6">
