@@ -9,6 +9,7 @@ import AudioContext from "../Context/AudioContext";
 import imgBongos from "../Images/bongos_1s.jpg";
 import imgDarbuka from "../Images/darbuka_1s.jpg";
 import imgDrums from "../Images/drums_1s.jpg";
+import imgGuitar from "../Images/guitar_1s.jpg";
 import imgKalimba from "../Images/kalimba_1s.jpg";
 import imgPiano from "../Images/piano_1s.jpg";
 import imgRecorder from "../Images/recorder_1s.jpg";
@@ -40,6 +41,9 @@ function InstrumentsPage() {
         break;
       case "drums":
         result = imgDrums;
+        break;
+      case "guitar":
+        result = imgGuitar;
         break;
       case "kalimba":
         result = imgKalimba;
@@ -85,7 +89,13 @@ function InstrumentsPage() {
           <NavBar />
           <h1>Instruments</h1>
           <div>
-            <input  className="search" placeholder="Search" type="text" value={search} onChange={searchChanged} />
+            <input
+              className="search"
+              placeholder="Search"
+              type="text"
+              value={search}
+              onChange={searchChanged}
+            />
           </div>
         </div>
       </header>
@@ -115,10 +125,13 @@ function InstrumentsPage() {
                   <div className="card-body">
                     <h5 className="card-title">{item}</h5>
                     <p className="card-text">
-                      {Utils.removeChars(Utils.partOfString(
-                        instruments.getInfo(item).generalInfo,
-                        100
-                      ), "[]♫")}
+                      {Utils.removeChars(
+                        Utils.partOfString(
+                          instruments.getInfo(item).generalInfo,
+                          100
+                        ),
+                        "[]♫"
+                      )}
                     </p>
                     <Link
                       to={`/instrument/${Utils.spacesToUnderscores(

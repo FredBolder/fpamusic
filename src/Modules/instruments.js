@@ -1,6 +1,7 @@
 import { Bongos } from "./bongos.js";
 import { Darbuka } from "./darbuka.js";
 import { Drums } from "./drums.js";
+import { Guitar } from "./guitar.js";
 import { Kalimba } from "./kalimba.js";
 import { Piano } from "./piano.js";
 import { Recorder } from "./recorder.js";
@@ -27,6 +28,9 @@ class Instruments {
         break;
       case "drums":
         result = new Drums();
+        break;
+      case "guitar":
+        result = new Guitar();
         break;
       case "kalimba":
         result = new Kalimba();
@@ -55,7 +59,7 @@ class Instruments {
   }
 
   getInstrumentList() {
-    return ["Bongos", "Darbuka", "Drums", "Kalimba", "Piano", "Recorder", "Tongue drum", "Voice"];
+    return ["Bongos", "Darbuka", "Drums", "Guitar", "Kalimba", "Piano", "Recorder", "Tongue drum", "Voice"];
   }
 
   getLinkCategories(links) {
@@ -70,7 +74,7 @@ class Instruments {
     return categories;
   }
 
-  
+
 
 }
 

@@ -7,6 +7,7 @@ import { Instruments } from "../Modules/instruments";
 import { Utils } from "../Modules/utils";
 import imgBongos from "../Images/bongos_1.jpg";
 import imgDarbuka from "../Images/darbuka_1.jpg";
+import imgGuitar from "../Images/guitar_1.jpg";
 import imgDrums from "../Images/drums_1.jpg";
 import imgKalimba from "../Images/kalimba_1.jpg";
 import imgPiano from "../Images/piano_1.jpg";
@@ -48,6 +49,9 @@ function InstrumentPage() {
         break;
       case "drums":
         result = imgDrums;
+        break;
+      case "guitar":
+        result = imgGuitar;
         break;
       case "kalimba":
         result = imgKalimba;

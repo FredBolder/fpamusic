@@ -63,7 +63,8 @@ class Recorder extends Instrument {
                     "http://www.dansblad.nl/grrecorder/, Greek Dances for Soprano Recorder"
                 ],
                 funny: [
-                    "https://www.youtube.com/@Rec0rderMast3r"
+                    "https://www.youtube.com/@Rec0rderMast3r",
+                    "https://www.youtube.com/watch?v=2pc67IJZr9o"
                 ]
             }
         };
