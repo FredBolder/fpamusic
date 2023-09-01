@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
@@ -17,6 +17,7 @@ import imgVoice from "../Images/voice_1s.jpg";
 import "./assets/css/style.css";
 
 function InstrumentsPage() {
+  const [search, setSearch] = useState("");
   const { introMusic } = useContext(AudioContext);
   const instruments = new Instruments();
   const instrumentList = instruments.getInstrumentList();
@@ -62,6 +63,20 @@ function InstrumentsPage() {
     return result;
   }
 
+  const searchChanged = (event) => {
+    setSearch(event.target.value);
+  };
+
+  function searchText(instr) {
+    let found = true;
+    if (search !== "") {
+      const info = instruments.getInfo(instr);
+      const text = info.generalInfo.toLowerCase();
+      found = text.includes(search.toLowerCase());
+    }
+    return found;
+  }
+
   return (
     <div className="bg-dark text-light">
       <header className="d-flex justify-content-start">
@@ -71,40 +86,20 @@ function InstrumentsPage() {
           <h1>Instruments</h1>
           <div>
             <span className="me-2">Search</span>
-            <input type="text" />
+            <input type="text" value={search} onChange={searchChanged} />
           </div>
         </div>
       </header>
       <main>
         <div className="ms-3 me-4 mt-4 d-flex gap-3 flex-wrap justify-content-center justify-content-md-start ">
           {instrumentList.map((item) => {
-            return (
-              <div
-                key={item}
-                className="card cardbackground"
-                style={{ width: "18rem" }}
-              >
-                <Link
-                  to={`/instrument/${Utils.spacesToUnderscores(
-                    item.toLowerCase()
-                  )}`}
-                  className="navlink"
-                  onClick={navClicked}
+            if (searchText(item)) {
+              return (
+                <div
+                  key={item}
+                  className="card cardbackground"
+                  style={{ width: "18rem" }}
                 >
-                  <img
-                    src={getImage(item)}
-                    className="card-img-top"
-                    alt={item}
-                  />
-                </Link>
-                <div className="card-body">
-                  <h5 className="card-title">{item}</h5>
-                  <p className="card-text">
-                    {Utils.partOfString(
-                      instruments.getInfo(item).generalInfo,
-                      100
-                    )}
-                  </p>
                   <Link
                     to={`/instrument/${Utils.spacesToUnderscores(
                       item.toLowerCase()
@@ -112,11 +107,35 @@ function InstrumentsPage() {
                     className="navlink"
                     onClick={navClicked}
                   >
-                    Read more
+                    <img
+                      src={getImage(item)}
+                      className="card-img-top"
+                      alt={item}
+                    />
                   </Link>
+                  <div className="card-body">
+                    <h5 className="card-title">{item}</h5>
+                    <p className="card-text">
+                      {Utils.partOfString(
+                        instruments.getInfo(item).generalInfo,
+                        100
+                      )}
+                    </p>
+                    <Link
+                      to={`/instrument/${Utils.spacesToUnderscores(
+                        item.toLowerCase()
+                      )}`}
+                      className="navlink"
+                      onClick={navClicked}
+                    >
+                      Read more
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            );
+              );
+            } else {
+              return "";
+            }
           })}
         </div>
       </main>

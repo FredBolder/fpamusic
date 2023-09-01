@@ -17,7 +17,7 @@ import sndDoum from "../Sounds/doum.wav";
 import sndKa from "../Sounds/ka.wav";
 import sndTek from "../Sounds/tek.wav";
 import sndBassDrum from "../Sounds/bass_drum.wav";
-import sndSnareDrum from "../Sounds/bass_drum.wav";
+import sndSnareDrum from "../Sounds/snare_drum.wav";
 import sndTomDrum from "../Sounds/mid_tom.wav";
 import sndHiHat from "../Sounds/closed_hi-hat.wav";
 import sndCrashCymbal from "../Sounds/crash_cymbal.wav";
