@@ -22,6 +22,7 @@ import sndTomDrum from "../Sounds/mid_tom.wav";
 import sndHiHat from "../Sounds/closed_hi-hat.wav";
 import sndCrashCymbal from "../Sounds/crash_cymbal.wav";
 import sndRideCymbal from "../Sounds/ride_cymbal.wav";
+import sndTongDrum from "../Sounds/tongue_drum.wav";
 import "./assets/css/style.css";
 
 function InstrumentPage() {
@@ -101,7 +102,9 @@ function InstrumentPage() {
       case "ride cymbal":
         result = sndRideCymbal;
         break;
-
+      case "bell-like sound":
+        result = sndTongDrum;
+        break;
       default:
         result = null;
         break;

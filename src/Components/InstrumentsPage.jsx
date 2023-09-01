@@ -118,7 +118,7 @@ function InstrumentsPage() {
                       {Utils.removeChars(Utils.partOfString(
                         instruments.getInfo(item).generalInfo,
                         100
-                      ), "[]")}
+                      ), "[]♫")}
                     </p>
                     <Link
                       to={`/instrument/${Utils.spacesToUnderscores(

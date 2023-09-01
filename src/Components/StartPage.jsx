@@ -6,8 +6,6 @@ import "./assets/css/style.css";
 import AudioContext from "../Context/AudioContext";
 
 function StartPage() {
-  const linkClass =
-    "link-offset-2 link-underline link-underline-opacity-0 navlink";
   const navigate = useNavigate();
   const { introMusic } = useContext(AudioContext);
 

@@ -83,6 +83,9 @@ class Utils {
       if (word.includes("]") || word.includes("[")) {
         word = "";
       }
+      if (word.endsWith("♫")) {
+        word = word.slice(0, word.length - 1);
+      }
     }
     return word;
   }
@@ -115,7 +118,7 @@ class Utils {
 
   static removeChars(s, c) {
     let result = s;
-    
+
     for (let i = 0; i < c.length; i++) {
       result = result.replace(c[i], "");
     }
