@@ -4,24 +4,46 @@ class Recorder extends Instrument {
     constructor() {
         super();
         this.gi = "A recorder is a wind instrument. ";
-        this.gi += "They can be made of wood or plastic. Plastic recorders are cheaper ";
+        this.gi += "The available sizes are from very small to huge: Garklein, Sopranino, ";
+        this.gi += "Soprano (Descant), Alto (Treble), Tenor, Basset, Great bass and Contra ";
+        this.gi += "bass. The smaller the size, the higher the pitch. ";
+        this.gi += "The Soprano recorder is the most suitable for children and beginners. ";
+        this.gi += "It has a range of almost 3 octaves, but the notes of the third octave ";
+        this.gi += "are very difficult to play and for some of them you need your knee. ";
+        this.gi += "There are cheap, but also very expensive recorders. ";
+        this.gi += "Recorders can be made of wood or plastic. Plastic recorders are cheaper ";
         this.gi += "and easy to clean. Wooden recorders sound a little better, but they ";
         this.gi += "are affected by humidity. ";
         this.gi += "There are two main fingering systems: Baroque (English) and German. ";
         this.gi += "The German system was later created to make it easier for beginners ";
         this.gi += "to learn. You can recognize a German recorder by the small fifth ";
         this.gi += "hole that is smaller than the fourth hole. ";
-        this.gi += "The scale of C is very easy to play on a soprano German recorder, ";
+        this.gi += "The scale of C is very easy to play on a Soprano German recorder, ";
         this.gi += "but the fingering for sharps and flats is often more difficult. ";
         this.gi += "You might think that you can not tune a recorder, but if you ";
         this.gi += "blow harder the pitch will be higher and if you blow softer the ";
         this.gi += "pitch will be lower. You can also lower the pitch by pulling the ";
         this.gi += "mouthpiece a little out. ";
-        this.gi += "If you close with your fingers all holes of a soprano recorder, ";
+        this.gi += "If you close with your fingers all holes of a Soprano recorder, ";
         this.gi += "you will get the low C, but if you half close the bell hole with ";
         this.gi += "your knee, you will get the B before that C! ";
         this.gi += "There are also pentatonic recorders that are very easy to play, ";
         this.gi += "but of course with (mostly) only 7 notes they are very limited. ";
+        this.gi += "Many people think a recorder sounds terrible, but that is probably ";
+        this.gi += "because the recorder is often used by children to start learning ";
+        this.gi += "music and they mostly use the wrong technique. Some causes for a ";
+        this.gi += "bad sound are leaking holes, blowing too hard and condensation in ";
+        this.gi += "the wind way. To prevent condensation you can warm the head with ";
+        this.gi += "your hands before playing. You can remove moisture by ";
+        this.gi += "disconnecting the head, closing with your hand the end and blow ";
+        this.gi += "hard into the window. The moisture will emerge from the ";
+        this.gi += "mouthpiece. ";
+        this.gi += "It is important to know that low notes need slow (warm) air and ";
+        this.gi += "high notes need fast (cold) air. ";
+        this.gi += "For an E (second octave) and higher on a Soprano or Tenor recorder, ";
+        this.gi += "the thumb hole must be partially open. The higher the note, the ";
+        this.gi += "more closed the thumb hole must be, but not totally closed. ";
+        this.gi += "This takes practice. ";
         this.gi += "";
         this.info = {
             name: "Recorder",
@@ -30,21 +52,25 @@ class Recorder extends Instrument {
             links: {
                 general: [
                     "https://en.wikipedia.org/wiki/Recorder_(musical_instrument), Recorder - Wikipedia",
-                    "https://en.wikipedia.org/wiki/Soprano_recorder,  Soprano recorder - Wikipedia"
+                    "https://en.wikipedia.org/wiki/Soprano_recorder,  Soprano recorder - Wikipedia",
+                    "https://learnrecorder.com/"
                 ],
                 beginners_lessons: [
                     "https://www.youtube.com/watch?v=-d6uVjIEkMY, First lesson",
                     "https://www.youtube.com/playlist?list=PLYVfQ47cCHaCRrSS8jeNptYyXGx3DqPtH",
-                    "https://www.youtube.com/watch?v=z4tLQ09_YZE, All notes"
+                    "https://www.youtube.com/watch?v=z4tLQ09_YZE, All notes",
+                    "https://www.youtube.com/watch?v=PCGjTz2LOPA, Top 10 Recorder Mistakes"
                 ],
                 songs: 
                 [
-                    "https://www.youcanplayit.com/"
+                    "https://www.youcanplayit.com/",
+                    "https://www.capotastomusic.com/soprano-recorder-sheet-music/easy.htm"
                 ],
                 articles: [
                     "https://professionalcomposers.com/flute-vs-recorder/, Flute vs Recorder",
                     "https://hub.yamaha.com/winds/wood/recorders-baroque-vs-german/, Baroque vs German",
-                    "https://aswltd.com/finger.htm, Recorder Fingering Systems"
+                    "https://aswltd.com/finger.htm, Recorder Fingering Systems", 
+                    "http://www.saundersrecorders.com/topnotes.htm, High notes"
                 ],
                 fingering: [
                     "https://americanrecorder.org/recorder_fingering_charts.php"

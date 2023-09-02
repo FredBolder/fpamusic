@@ -5,8 +5,8 @@ class Drums extends Instrument {
     super();
     this.gi = "A drum set is a collection of drums and cymbals. ";
     this.gi += "A standard drum set normally consists of a [bass drum♫], a [snare drum♫], ";
-    this.gi += "Before the existence of a drum set, different percussionists were ";
     this.gi += "one or more [toms♫], a [hi-hat♫], a [crash cymbal♫] and a [ride cymbal♫]. ";
+    this.gi += "Before the existence of a drum set, different percussionists were ";
     this.gi += "playing the separate drums. ";
     this.gi += "In addition to acoustic drums, there are also electronic drums and ";
     this.gi += "they are getting better and better.";
