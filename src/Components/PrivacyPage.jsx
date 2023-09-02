@@ -27,7 +27,7 @@ function PrivacyPage() {
           <Link className={linkClass} to="/contact">
             Contact us
           </Link>{" "}
-          for any questions or request.
+          for any questions or requests.
         </p>
       </main>
     </div>
