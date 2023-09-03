@@ -18,7 +18,6 @@ function test() {
 
   instruments = new Instruments();
   instr = instruments.getInfo("dRuMs");
-  //Utils.log(instr.generalInfo);
   result = instr.name + ", " + instr.category;
   instr = instruments.getInfo("piaNO");
   result += ", " + instr.name + ", " + instr.category;
@@ -110,6 +109,20 @@ function test() {
     "",
     Utils.getWordBetweenBrackets("The [doum], [tek] and [ka] are the main strokes.", 11)
   );
+
+  const infoObj = {
+    name: "Drums",
+    articles: {
+      nice_article: "This is a nice article!!",
+      another_article: "This is another article.",
+    },
+  };
+  result = instruments.getArticles(infoObj);
+  expected = ["nice_article,another_article"];
+  checkResult("TEST 7A", expected.toString(), result.toString());
+  if (result.length > 0) {
+    //Utils.log(infoObj.articles[result[0]]);
+  }
 
   linksToCheck = [];
   const instrumentList = instruments.getInstrumentList();

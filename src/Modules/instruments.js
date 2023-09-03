@@ -11,6 +11,17 @@ import { Voice } from "./voice.js";
 
 class Instruments {
 
+  getArticles(info) {
+    let result = [];
+    if (info.hasOwnProperty("articles")) {
+      const keys = Object.keys(info.articles);
+      for (const key of keys) {
+        result.push(key);
+      }
+    }
+    return result;
+  }
+
   getInfo(instrument) {
     let result = null;
     if (typeof instrument !== "string") {
