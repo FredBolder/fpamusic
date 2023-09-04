@@ -73,10 +73,22 @@ function InstrumentsPage() {
 
   function searchText(instr) {
     let found = true;
+    let searchString = search.toLowerCase();
+
     if (search !== "") {
       const info = instruments.getInfo(instr);
       const text = info.generalInfo.toLowerCase();
-      found = text.includes(search.toLowerCase());
+      found = text.includes(searchString);
+      if (!found) {
+        const articles = instruments.getArticles(info);
+        for (let i = 0; i < articles.length && !found; i++) {
+          const article = articles[i];
+          const articleText = info.articles[article].toLowerCase();
+          if (articleText.includes(searchString)) {
+            found = true;
+          }
+        }
+      }
     }
     return found;
   }
