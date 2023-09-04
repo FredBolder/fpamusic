@@ -26,7 +26,7 @@ function AboutPage() {
           ntonio - the three team members working on it. Our mission is to make
           music education available for everybody. When you are learning how to
           play a musical instrument, it will increase your coordination skills,
-          makes you creative and builds your confidence.
+          enhance your creativity and boost your confidence.
         </p>
       </main>
       <footer className="ms-4 me-4 mt-5 fs-3">
