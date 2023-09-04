@@ -24,7 +24,7 @@ function AboutPage() {
           <span className="fw-bold"> P</span>riyanka and{" "}
           <span className="fw-bold"> A</span>
           ntonio - the three team members working on it. Our mission is to make
-          music education available for everybody. When you are learning ,how to
+          music education available for everybody. When you are learning how to
           play a musical instrument, it will increase your coordination skills,
           makes you creative and builds your confidence.
         </p>
