@@ -32,9 +32,15 @@ function InstrumentPage() {
   const info = instruments.getInfo(instrumentName);
   const linkCategories = instruments.getLinkCategories(info.links);
   const [selectedCategory, setSelectedCategory] = useState("general");
+  const articles = instruments.getArticles(info);
+  const [selectedArticle, setSelectedArticle] = useState(null);
 
   function selectCategory(category) {
     setSelectedCategory(category === selectedCategory ? null : category);
+  }
+
+  function selectArticle(article) {
+    setSelectedArticle(article === selectedArticle ? null : article);
   }
 
   function getImage(instrument) {
@@ -150,7 +156,29 @@ function InstrumentPage() {
               {info.generalInfo}
             </p>
             <div>
-              <h3 className="mb-0">Resources</h3>
+              {articles.length > 0 && ( // Check if articles exist
+                <>
+                  <h3 className="mt-5 mb-0">Articles</h3>
+                  <p className="text-secondary fs-6 ">
+                  (please choose the article below)
+                  </p>
+                  {articles.map((article, index) => (
+                    <div key={index}>
+                      <h3
+                        className="mb-0 mt-3 text-decoration-none navlink fw-bold fs-4"
+                        onClick={() => selectArticle(article)}
+                      >
+                        {Utils.underscoresToSpaces(Utils.capitalize(article))}
+                      </h3>
+              
+                      {selectedArticle === article && (
+                        <p className="mt-3 fs-5">{info.articles[article]}</p>
+                      )}
+                    </div>
+                  ))}
+                </>
+              )}
+              <h3 className="mb-0 mt-3">Resources</h3>
               <p className="text-secondary fs-6">
                 (please choose the category below)
               </p>
@@ -200,5 +228,6 @@ function InstrumentPage() {
     </div>
   );
 }
+
 
 export default InstrumentPage;
