@@ -3,6 +3,14 @@ import { Instrument } from "./instrument.js";
 class Recorder extends Instrument {
     constructor() {
         super();
+        this.a1 = "It is important to take good care of your recorder. It starts with ";
+        this.a1 += "keeping it clean. Make sure that you have brushed your teeth and ";
+        this.a1 += "washed your hands before playing. Warm the head with your hands to ";
+        this.a1 += "prevent condensation. ";
+        this.a1 += "";
+        this.a1 += "";
+        this.a1 += "";
+
         this.gi = "A recorder is a wind instrument. ";
         this.gi += "The available sizes are from very small to huge: Garklein, Sopranino, ";
         this.gi += "Soprano (Descant), Alto (Treble), Tenor, Basset, Great bass and Contra ";
@@ -45,10 +53,14 @@ class Recorder extends Instrument {
         this.gi += "more closed the thumb hole must be, but not totally closed. ";
         this.gi += "This takes practice. ";
         this.gi += "";
+
         this.info = {
             name: "Recorder",
             category: "Wind",
             generalInfo: this.gi,
+            articles: {
+                maintenance_of_a_recorder: this.a1,
+            },
             links: {
                 general: [
                     "https://en.wikipedia.org/wiki/Recorder_(musical_instrument), Recorder - Wikipedia",
@@ -61,15 +73,15 @@ class Recorder extends Instrument {
                     "https://www.youtube.com/watch?v=z4tLQ09_YZE, All notes",
                     "https://www.youtube.com/watch?v=PCGjTz2LOPA, Top 10 Recorder Mistakes"
                 ],
-                songs: 
-                [
-                    "https://www.youcanplayit.com/",
-                    "https://www.capotastomusic.com/soprano-recorder-sheet-music/easy.htm"
-                ],
+                songs:
+                    [
+                        "https://www.youcanplayit.com/",
+                        "https://www.capotastomusic.com/soprano-recorder-sheet-music/easy.htm"
+                    ],
                 articles: [
                     "https://professionalcomposers.com/flute-vs-recorder/, Flute vs Recorder",
                     "https://hub.yamaha.com/winds/wood/recorders-baroque-vs-german/, Baroque vs German",
-                    "https://aswltd.com/finger.htm, Recorder Fingering Systems", 
+                    "https://aswltd.com/finger.htm, Recorder Fingering Systems",
                     "http://www.saundersrecorders.com/topnotes.htm, High notes"
                 ],
                 fingering: [
