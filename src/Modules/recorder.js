@@ -11,8 +11,15 @@ class Recorder extends Instrument {
         this.a1 += "head and clean both parts with a cleaning rod with cloth or a ";
         this.a1 += "cleaning brush. ";
         this.a1 += "You can remove moisture in the mouthpiece by closing with your hand ";
-        this.a1 += "the end and blow hard into the window. The moisture will emerge from ";
+        this.a1 += "the end and blow into the window. The moisture will emerge from ";
         this.a1 += "the mouthpiece. ";
+        this.a1 += "New wooden recorders must be played in. Play the recorder daily in ";
+        this.a1 += "the first six weeks, but not too long. You can play 5 minutes ";
+        this.a1 += "a day in the first week, 10 minutes a day in the second week, 15 ";
+        this.a1 += "minutes a day in the third week etc, but it is better to stop when ";
+        this.a1 += "the sound is starting to become bad. Do not use anti-condens in the ";
+        this.a1 += "playing-in period and avoid high notes in the beginning. ";
+        this.a1 += "";
         this.a1 += "";
 
         this.gi = "A recorder is a wind instrument. ";
@@ -91,7 +98,8 @@ class Recorder extends Instrument {
                     "https://www.doctormusik.com/apps-and-games/virtual-recorder/"
                 ],
                 youtube: [
-                    "https://www.youtube.com/@Team_Recorder",
+                    "https://www.youtube.com/@Team_Recorder, Sarah Jeffery",
+                    "https://www.youtube.com/@luciehorsch4454, Lucie Horsch",
                     "https://www.youtube.com/shorts/mbX59xpidW4",
                     "https://www.youtube.com/watch?v=hFnKmqAOmBs, Introducing the Baroque Recorder",
                     "https://www.youtube.com/watch?v=iw0E2xP57UA, Plastic vs Wood"
