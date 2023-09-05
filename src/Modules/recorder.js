@@ -5,10 +5,14 @@ class Recorder extends Instrument {
         super();
         this.a1 = "It is important to take good care of your recorder. It starts with ";
         this.a1 += "keeping it clean. Make sure that you have brushed your teeth and ";
-        this.a1 += "washed your hands before playing. Warm the head with your hands to ";
+        this.a1 += "washed your hands before playing. Warm the head under your arm to ";
         this.a1 += "prevent condensation. ";
-        this.a1 += "";
-        this.a1 += "";
+        this.a1 += "After playing you should dry your recorder. First disconnect the ";
+        this.a1 += "head and clean both parts with a cleaning rod with cloth or a ";
+        this.a1 += "cleaning brush. ";
+        this.a1 += "You can remove moisture in the mouthpiece by closing with your hand ";
+        this.a1 += "the end and blow hard into the window. The moisture will emerge from ";
+        this.a1 += "the mouthpiece. ";
         this.a1 += "";
 
         this.gi = "A recorder is a wind instrument. ";
@@ -41,11 +45,7 @@ class Recorder extends Instrument {
         this.gi += "because the recorder is often used by children to start learning ";
         this.gi += "music and they mostly use the wrong technique. Some causes for a ";
         this.gi += "bad sound are leaking holes, blowing too hard and condensation in ";
-        this.gi += "the wind way. To prevent condensation you can warm the head with ";
-        this.gi += "your hands before playing. You can remove moisture by ";
-        this.gi += "disconnecting the head, closing with your hand the end and blow ";
-        this.gi += "hard into the window. The moisture will emerge from the ";
-        this.gi += "mouthpiece. ";
+        this.gi += "the wind way. ";
         this.gi += "It is important to know that low notes need slow (warm) air and ";
         this.gi += "high notes need fast (cold) air. ";
         this.gi += "For an E (second octave) and higher on a Soprano or Tenor recorder, ";
