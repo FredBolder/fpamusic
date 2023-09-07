@@ -14,6 +14,7 @@ import imgPiano from "../Images/piano_1.jpg";
 import imgRecorder from "../Images/recorder_2_text.jpg";
 import imgTongueDrum from "../Images/tongue_drum_1.jpg";
 import imgVoice from "../Images/voice_1.jpg";
+import imgDrumSticks from "../Images/drum_sticks.jpg";
 import sndDoum from "../Sounds/doum.wav";
 import sndKa from "../Sounds/ka.wav";
 import sndTek from "../Sounds/tek.wav";
@@ -73,6 +74,9 @@ function InstrumentPage() {
         break;
       case "voice":
         result = imgVoice;
+        break;
+      case "a:drum_sticks":
+        result = imgDrumSticks;
         break;
       default:
         result = null;
@@ -160,7 +164,7 @@ function InstrumentPage() {
                 <>
                   <h3 className="mt-5 mb-0">Articles</h3>
                   <p className="text-secondary fs-6 ">
-                  (please choose the article below)
+                    (please choose the article below)
                   </p>
                   {articles.map((article, index) => (
                     <div key={index}>
@@ -170,7 +174,14 @@ function InstrumentPage() {
                       >
                         {Utils.underscoresToSpaces(Utils.capitalize(article))}
                       </h3>
-              
+
+                      {(selectedArticle === article && getImage("a:"+article) !== null) && (
+                        <img
+                          src={getImage("a:"+article)}
+                          alt={article}
+                          className="img-fluid mt-4 mb-1 rounded-4"
+                        />
+                      )}
                       {selectedArticle === article && (
                         <p className="mt-3 fs-5">{info.articles[article]}</p>
                       )}
@@ -228,6 +239,5 @@ function InstrumentPage() {
     </div>
   );
 }
-
 
 export default InstrumentPage;

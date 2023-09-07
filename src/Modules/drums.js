@@ -45,12 +45,25 @@ class Drums extends Instrument {
     this.a1 += "which can be important for a public performance. ";
     this.a1 += "";
 
+    this.a2 = "There are many different drum sticks. This article will help you to find the ";
+    this.a2 += "drum sticks that are the best for you. ";
+    this.a2 += "On most drum sticks there is a code. The number indicates the diameter. ";
+    this.a2 += "The higher the number, the thinner the stick. The most common numbers are 7, ";
+    this.a2 += "5 and 2. ";
+    this.a2 += "The letter indicates the application (A = orchestra, B = band, ";
+    this.a2 += "D = dance band and S = street). The most common letters are A and B. ";
+    this.a2 += "5A is universal and a good choice for beginners. 7A is light and very suitable ";
+    this.a2 += "for jazz. 5B is slightly heavier than 5A and therefore good for rock. ";
+    this.a2 += "2B is heavy and good for hard rock and metal. ";
+    this.a2 += "";
+
     this.info = {
       name: "Drums",
       category: "Percussion",
       generalInfo: this.gi,
       articles: {
         acoustic_vs_electronic_drums: this.a1,
+        drum_sticks: this.a2,
       },
       links: {
         general: [
