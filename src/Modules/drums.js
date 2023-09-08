@@ -47,14 +47,35 @@ class Drums extends Instrument {
 
     this.a2 = "There are many different drum sticks. This article will help you to find the ";
     this.a2 += "drum sticks that are the best for you. ";
+    this.a2 += "Drum sticks are mostly made of wood (hickory, maple or oak). ";
     this.a2 += "On most drum sticks there is a code. The number indicates the diameter. ";
-    this.a2 += "The higher the number, the thinner the stick. The most common numbers are 7, ";
-    this.a2 += "5 and 2. ";
+    this.a2 += "The higher the number, the thinner and lighter the stick. The most common ";
+    this.a2 += "numbers are 7, 5 and 2. ";
     this.a2 += "The letter indicates the application (A = orchestra, B = band, ";
     this.a2 += "D = dance band and S = street). The most common letters are A and B. ";
     this.a2 += "5A is universal and a good choice for beginners. 7A is light and very suitable ";
     this.a2 += "for jazz. 5B is slightly heavier than 5A and therefore good for rock. ";
     this.a2 += "2B is heavy and good for hard rock and metal. ";
+    this.a2 += "Please note that, for example, 5B drum sticks from one brand may differ from ";
+    this.a2 += "5B drum sticks from another brand. ";
+    this.a2 += "The sound of acoustic cymbals depends on the tip of the drum stick. ";
+    this.a2 += "As you can see in the picture, there are many different tip shapes. ";
+    this.a2 += "The smaller the surface area that the cymbal touches, the brighter ";
+    this.a2 += "the sound. A large surface area results in a full and warm sound. ";
+    this.a2 += "The ball shape is very useful when you want a consistent and bright sound. ";
+    this.a2 += "You can use drum sticks with a tear drop tip for a full and warm sound.  ";
+    this.a2 += "Drum sticks with an oval tip are great when you want to make different ";
+    this.a2 += "sounds depending on the angle. A barrel shaped tip results in a punchy ";
+    this.a2 += "sound. ";
+    this.a2 += "There are also nylon tips. They produce a consistent and bright sound. ";
+    this.a2 += "With electronic drums, the shape of the tip makes no difference in the sound. ";
+    this.a2 += "If you play both acoustic drums and electronic drums, it is important not to ";
+    this.a2 += "play electronic drums with the same sticks you used to play acoustic drums. ";
+    this.a2 += "Drum sticks can easily be damaged by playing acoustic cymbals, and damaged ";
+    this.a2 += "drum sticks can damage electronic drums. ";
+    this.a2 += "When you want to buy a drum stick, you can check whether it is straight by ";
+    this.a2 += "rolling it on a flat surface. Some good drum stick brands are Vic Firth ";
+    this.a2 += "and Promark. ";
     this.a2 += "";
 
     this.info = {
