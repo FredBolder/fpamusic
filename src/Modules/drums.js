@@ -96,7 +96,9 @@ class Drums extends Instrument {
           "https://www.youtube.com/watch?v=XeVLe4dX9V8&list=PL45A6530592779AD4"
         ],
         patterns: [
-          "https://drumbeatsonline.com/notation-20-must-know-drum-beats"
+          "https://drumbeatsonline.com/notation-20-must-know-drum-beats",
+          "https://thedrumninja.com/odd-time-drumming-5-8/, 5/8",
+          "https://thedrumninja.com/odd-time-drumming-7-8/, 7/8"
         ],
         virtual: [
           "https://www.virtualdrumming.com/",

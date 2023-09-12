@@ -15,6 +15,7 @@ import imgRecorder from "../Images/recorder_2_text.jpg";
 import imgTongueDrum from "../Images/tongue_drum_1.jpg";
 import imgVoice from "../Images/voice_1.jpg";
 import imgDrumSticks from "../Images/drum_sticks.jpg";
+import imgMaintenanceRecorder from "../Images/maintenance_of_a_recorder.jpg";
 import sndDoum from "../Sounds/doum.wav";
 import sndKa from "../Sounds/ka.wav";
 import sndTek from "../Sounds/tek.wav";
@@ -77,6 +78,9 @@ function InstrumentPage() {
         break;
       case "a:drum_sticks":
         result = imgDrumSticks;
+        break;
+      case "a:maintenance_of_a_recorder":
+        result = imgMaintenanceRecorder;
         break;
       default:
         result = null;
@@ -175,13 +179,14 @@ function InstrumentPage() {
                         {Utils.underscoresToSpaces(Utils.capitalize(article))}
                       </h3>
 
-                      {(selectedArticle === article && getImage("a:"+article) !== null) && (
-                        <img
-                          src={getImage("a:"+article)}
-                          alt={article}
-                          className="img-fluid mt-4 mb-1 rounded-4"
-                        />
-                      )}
+                      {selectedArticle === article &&
+                        getImage("a:" + article) !== null && (
+                          <img
+                            src={getImage("a:" + article)}
+                            alt={article}
+                            className="img-fluid mt-4 mb-1 rounded-4"
+                          />
+                        )}
                       {selectedArticle === article && (
                         <p className="mt-3 fs-5">{info.articles[article]}</p>
                       )}
