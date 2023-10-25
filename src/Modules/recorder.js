@@ -102,7 +102,8 @@ class Recorder extends Instrument {
                     "https://www.youtube.com/@luciehorsch4454, Lucie Horsch",
                     "https://www.youtube.com/shorts/mbX59xpidW4",
                     "https://www.youtube.com/watch?v=hFnKmqAOmBs, Introducing the Baroque Recorder",
-                    "https://www.youtube.com/watch?v=iw0E2xP57UA, Plastic vs Wood"
+                    "https://www.youtube.com/watch?v=iw0E2xP57UA, Plastic vs Wood",
+                    "https://www.youtube.com/watch?v=2LIyUmfgyFw, How to Write for Recorder in 5 Minutes"
                 ],
                 books: [
                     "http://www.dansblad.nl/brrecorder/, Ballroom & Latin Dances for Soprano Recorder",

@@ -62,14 +62,13 @@ class Utils {
 
   static getStringFromList(str, idx) {
     // This function returns a string from a comma separated list in str (example: "Piano, Drums, Guitar").
-    let result = ""; // The variable is storing the name with index(if available), if not it is returning an empty string.
+    let result = "";
     const items = str.split(",");
     if (idx >= 0 && idx < items.length) {
       result = items[idx].trim();
     } else {
       result = "";
     }
-
     return result;
   }
 

@@ -12,10 +12,12 @@ import imgDrums from "../Images/drums_1.jpg";
 import imgKalimba from "../Images/kalimba_1.jpg";
 import imgPiano from "../Images/piano_1.jpg";
 import imgRecorder from "../Images/recorder_2_text.jpg";
+import imgTinWhistle from "../Images/tin_whistle_2.jpg";
 import imgTongueDrum from "../Images/tongue_drum_1.jpg";
 import imgVoice from "../Images/voice_1.jpg";
 import imgDrumSticks from "../Images/drum_sticks.jpg";
 import imgMaintenanceRecorder from "../Images/maintenance_of_a_recorder.jpg";
+import imgTinWhistleFingeringChart from "../Images/tin_whistle_fingering_chart.jpg";
 import sndDoum from "../Sounds/doum.wav";
 import sndKa from "../Sounds/ka.wav";
 import sndTek from "../Sounds/tek.wav";
@@ -70,6 +72,9 @@ function InstrumentPage() {
       case "recorder":
         result = imgRecorder;
         break;
+      case "tin whistle":
+        result = imgTinWhistle;
+        break;
       case "tongue drum":
         result = imgTongueDrum;
         break;
@@ -81,6 +86,9 @@ function InstrumentPage() {
         break;
       case "a:maintenance_of_a_recorder":
         result = imgMaintenanceRecorder;
+        break;
+      case "a:tin_whistle_fingering_chart":
+        result = imgTinWhistleFingeringChart;
         break;
       default:
         result = null;
@@ -228,7 +236,7 @@ function InstrumentPage() {
                               {link}
                             </a>
                             <div className="text-white fs-5">
-                              {Utils.capitalize(description.trim())}
+                              {description.trim()}
                             </div>
                           </li>
                         );

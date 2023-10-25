@@ -13,6 +13,7 @@ import imgGuitar from "../Images/guitar_1s.jpg";
 import imgKalimba from "../Images/kalimba_1s.jpg";
 import imgPiano from "../Images/piano_1s.jpg";
 import imgRecorder from "../Images/recorder_1s.jpg";
+import imgTinWhistle from "../Images/tin_whistle_2s.jpg";
 import imgTongueDrum from "../Images/tongue_drum_1s.jpg";
 import imgVoice from "../Images/voice_1s.jpg";
 import "./assets/css/style.css";
@@ -53,6 +54,9 @@ function InstrumentsPage() {
         break;
       case "recorder":
         result = imgRecorder;
+        break;
+      case "tin whistle":
+        result = imgTinWhistle;
         break;
       case "tongue drum":
         result = imgTongueDrum;

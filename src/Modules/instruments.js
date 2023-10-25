@@ -5,12 +5,11 @@ import { Guitar } from "./guitar.js";
 import { Kalimba } from "./kalimba.js";
 import { Piano } from "./piano.js";
 import { Recorder } from "./recorder.js";
+import { Tin_whistle } from "./tin_whistle.js";
 import { Tongue_drum } from "./tongue_drum.js";
 import { Voice } from "./voice.js";
 
-
 class Instruments {
-
   getArticles(info) {
     let result = [];
     if (info.hasOwnProperty("articles")) {
@@ -52,6 +51,9 @@ class Instruments {
       case "recorder":
         result = new Recorder();
         break;
+      case "tin whistle":
+        result = new Tin_whistle();
+        break;
       case "tongue drum":
         result = new Tongue_drum();
         break;
@@ -70,7 +72,18 @@ class Instruments {
   }
 
   getInstrumentList() {
-    return ["Bongos", "Darbuka", "Drums", "Guitar", "Kalimba", "Piano", "Recorder", "Tongue drum", "Voice"];
+    return [
+      "Bongos",
+      "Darbuka",
+      "Drums",
+      "Guitar",
+      "Kalimba",
+      "Piano",
+      "Recorder",
+      "Tin whistle",
+      "Tongue drum",
+      "Voice",
+    ];
   }
 
   getLinkCategories(links) {
@@ -84,11 +97,6 @@ class Instruments {
 
     return categories;
   }
-
-
-
 }
-
-
 
 export { Instruments };
