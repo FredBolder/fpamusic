@@ -9,19 +9,30 @@ class Tin_whistle extends Instrument {
     this.a1 += "";
 
     this.gi =
-      "A tin whistle, Irish whistle or penny whistle is a six-holed wind instrument. ";
+      "A tin whistle, Irish whistle or penny whistle is a six-holed wind instrument ";
     this.gi +=
-      "It is a diatonic instrument, but it is possible to play a chromatic scale by ";
-    this.gi += "using half-holing or special fingerings. ";
+      "that is often used in Irish folk music. You can also hear one in ";
+    this.gi += "Paul Simon's song You can call me Al. ";
+    this.gi +=
+      "The tin whistle is a diatonic instrument, but it is possible to play a chromatic ";
+    this.gi += "scale by using half-holing or special fingerings. ";
     this.gi +=
       "The range of a tin whistle is normally two octaves. The notes of the second ";
     this.gi +=
       "octave are played by overblowing. Tin whistles are available in all 12 major ";
     this.gi +=
-      "keys. The D key is the most common key. On every thin whistle you can ";
+      "keys. The D key is the most common key. On every tin whistle you can ";
     this.gi +=
       "play in more keys. For example, with a D tin whistle, you can also easily play ";
     this.gi += "in G, B minor and E minor. ";
+    this.gi +=
+      "The correct blowing technique and air speed are crucial for producing ";
+    this.gi +=
+      "the desired sound. Low notes need slow (warm) air and high notes need ";
+    this.gi += "fast (cold) air. ";
+    this.gi +=
+      "For the seventh note on the flute's scale, there are no covered holes. ";
+    this.gi += "Use your right pinky for support if needed. ";
     this.gi += "";
     this.info = {
       name: "Tin whistle",
@@ -33,15 +44,19 @@ class Tin_whistle extends Instrument {
       links: {
         general: [
           "https://en.wikipedia.org/wiki/Tin_whistle, Tin whistle - Wikipedia",
+          "https://www.wikihow.com/Play-the-Tin-Whistle, How to Play the Tin Whistle",
         ],
         beginners_lessons: [
           "https://www.youtube.com/playlist?list=PLfUZy8uhccNge9K9DKDWi7Mzvq45QzMEs",
           "https://www.youtube.com/playlist?list=PL__nIDQ8JTGUrujMEVdDswOVOTGYnjzxj",
           "https://www.youtube.com/watch?v=jOOXwl20zlA",
+          "https://www.youtube.com/watch?v=vt7sMm4nn10, How to Play Tin Whistle in 10 Mins",
         ],
         songs: [
           "https://www.tinwhistle.com/tin-whistle-sheet-music-notes-and-tin-whistle-tabs",
           "https://www.youtube.com/playlist?list=PLQadz4_Sz9ChOwj-s2LAExtSeSf7ISvwq",
+          "https://www.irish-folk-songs.com/traditional-tunes-for-tin-whistle.html",
+          "https://whistleaway.com/sheet-music-for-you-can-call-me-al-paul-simon/, You can call me Al",
         ],
         articles: [
           "https://learntinwhistle.com/resources/tin-whistle-fingering-charts/, Fingering",
@@ -50,6 +65,7 @@ class Tin_whistle extends Instrument {
           "https://www.youtube.com/@CutiepieTinWhistle, CutiePie",
           "https://www.youtube.com/@TinWhistleTraveler, Tin Whistle Traveler",
           "https://www.youtube.com/@LearnTinWhistle, Learn Tin Whistle",
+          "https://www.youtube.com/@whistletutor, whistletutor",
         ],
       },
     };
