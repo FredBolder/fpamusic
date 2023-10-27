@@ -49,6 +49,7 @@ class Tin_whistle extends Instrument {
         youtube: [
           "https://www.youtube.com/@CutiepieTinWhistle, CutiePie",
           "https://www.youtube.com/@TinWhistleTraveler, Tin Whistle Traveler",
+          "https://www.youtube.com/@LearnTinWhistle, Learn Tin Whistle",
         ],
       },
     };
