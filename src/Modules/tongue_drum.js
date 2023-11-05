@@ -41,9 +41,9 @@ class Tongue_drum extends Instrument {
                     "https://www.youtube.com/@SimpleTankDrum"
                 ],
                 books: [
-                    "http://www.dansblad.nl/rtdrum/, Relaxing Music for Tongue Drum",
-                    "http://www.dansblad.nl/rtdrum2/, Relaxing Music 2 for Tongue Drum",
-                    "http://www.dansblad.nl/wtdrum/, Waltzes for Tongue Drum"
+                    "https://www.dansblad.nl/rtdrum/, Relaxing Music for Tongue Drum",
+                    "https://www.dansblad.nl/rtdrum2/, Relaxing Music 2 for Tongue Drum",
+                    "https://www.dansblad.nl/wtdrum/, Waltzes for Tongue Drum"
                 ],
             }
         };

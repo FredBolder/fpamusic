@@ -32,7 +32,8 @@ class Tin_whistle extends Instrument {
     this.gi += "fast (cold) air. ";
     this.gi +=
       "For the seventh note on the flute's scale, there are no covered holes. ";
-    this.gi += "Use your right pinky for support if needed. ";
+    this.gi += "It is best to keep your bottom hand (mostly right hand) pinky ";
+    this.gi += "on the whistle for support. ";
     this.gi += "";
     this.info = {
       name: "Tin whistle",
@@ -51,6 +52,7 @@ class Tin_whistle extends Instrument {
           "https://www.youtube.com/playlist?list=PL__nIDQ8JTGUrujMEVdDswOVOTGYnjzxj",
           "https://www.youtube.com/watch?v=jOOXwl20zlA",
           "https://www.youtube.com/watch?v=vt7sMm4nn10, How to Play Tin Whistle in 10 Mins",
+          "https://www.youtube.com/watch?v=TvfPY-XXUY4, How to hold a tin whistle",
         ],
         songs: [
           "https://www.tinwhistle.com/tin-whistle-sheet-music-notes-and-tin-whistle-tabs",
@@ -67,6 +69,9 @@ class Tin_whistle extends Instrument {
           "https://www.youtube.com/@LearnTinWhistle, Learn Tin Whistle",
           "https://www.youtube.com/@whistletutor, whistletutor",
         ],
+        books: [
+          "https://www.dansblad.nl/grtinwhistle/, Greek Folk Music for D Tin Whistle",
+      ],
       },
     };
   }

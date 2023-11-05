@@ -106,8 +106,8 @@ class Recorder extends Instrument {
                     "https://www.youtube.com/watch?v=2LIyUmfgyFw, How to Write for Recorder in 5 Minutes"
                 ],
                 books: [
-                    "http://www.dansblad.nl/brrecorder/, Ballroom & Latin Dances for Soprano Recorder",
-                    "http://www.dansblad.nl/grrecorder/, Greek Dances for Soprano Recorder"
+                    "https://www.dansblad.nl/brrecorder/, Ballroom & Latin Dances for Soprano Recorder",
+                    "https://www.dansblad.nl/grrecorder/, Greek Dances for Soprano Recorder"
                 ],
                 funny: [
                     "https://www.youtube.com/@Rec0rderMast3r",

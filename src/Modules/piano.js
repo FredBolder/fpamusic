@@ -35,7 +35,7 @@ class Piano extends Instrument {
                 ],
                 books: [
                     "https://www.dansblad.nl/brpiano/, Ballroom & Latin Dance Rhythms for Piano",
-                    "http://www.dansblad.nl/grpiano/, Greek Dance Rhythms for Piano"
+                    "https://www.dansblad.nl/grpiano/, Greek Dance Rhythms for Piano"
                 ],
             }
         };
