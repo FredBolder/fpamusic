@@ -19,7 +19,7 @@ class Tin_whistle extends Instrument {
     this.gi +=
       "The range of a tin whistle is normally two octaves. The notes of the second ";
     this.gi +=
-      "octave are played by overblowing. Tin whistles are available in all 12 major ";
+      "octave are played by blowing harder. Tin whistles are available in all 12 major ";
     this.gi +=
       "keys. The D key is the most common key. On every tin whistle you can ";
     this.gi +=
@@ -68,6 +68,7 @@ class Tin_whistle extends Instrument {
           "https://www.youtube.com/@TinWhistleTraveler, Tin Whistle Traveler",
           "https://www.youtube.com/@LearnTinWhistle, Learn Tin Whistle",
           "https://www.youtube.com/@whistletutor, whistletutor",
+          "https://www.youtube.com/watch?v=3V80-Fm_5Gs, Make a Tin Whistle out of PVC Pipe",
         ],
         books: [
           "https://www.dansblad.nl/grtinwhistle/, Greek Folk Music for D Tin Whistle",
