@@ -40,8 +40,9 @@ class Tin_whistle extends Instrument {
         this.gi +=
             "For the seventh note on the flute's scale, there are no covered holes. ";
         this.gi +=
-            'It is best to keep your bottom hand (mostly right hand) pinky ';
-        this.gi += 'on the whistle for support. ';
+            'For better support you can keep your bottom hand (mostly right hand) pinky ';
+        this.gi += 'on the whistle. If that is uncomfortable you can cover the holes ';
+        this.gi += 'with the middle pads of your fingers. ';
         this.gi += '';
         this.info = {
             name: 'Tin whistle',
