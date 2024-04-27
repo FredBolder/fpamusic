@@ -3,49 +3,31 @@ import { Instrument } from './instrument.js';
 class Tin_whistle extends Instrument {
     constructor() {
         super();
-        this.a1 =
-            'The notes not shown in bold are not in the key of the tin whistle, ';
-        this.a1 +=
-            'but you can use them to play in another key. Keep in mind that depending ';
-        this.a1 +=
-            'on your tin whistle, you might need another fingering than indicated. ';
-        this.a1 += '';
+        this.a1 = `The notes not shown in bold are not in the key of the tin whistle,
+        but you can use them to play in another key. Keep in mind that depending
+        on your tin whistle, you might need another fingering than indicated.`;
 
-        this.gi =
-            'A tin whistle, Irish whistle or penny whistle is a six-holed wind instrument ';
-        this.gi +=
-            'that is often used in Irish folk music. You can also hear one in ';
-        this.gi += "Paul Simon's song You can call me Al. ";
-        this.gi +=
-            'The tin whistle is a diatonic instrument, but it is possible to play a chromatic ';
-        this.gi += 'scale by using half-holing or special fingerings. ';
-        this.gi +=
-            'The range of a tin whistle is normally two octaves. The notes of the second ';
-        this.gi +=
-            'octave are played by blowing harder. Tin whistles are available in all 12 major ';
-        this.gi +=
-            'keys. The D key is the most common key. On every tin whistle you can ';
-        this.gi +=
-            'play in more keys by using advanced fingering or by partially covering a hole. ';
-        this.gi +=
-            'For example, with a D tin whistle, you can also easily play ';
-        this.gi +=
-            'in G, B minor and E minor. With a C tin whistle, you can also easily play ';
-        this.gi += 'in F, A minor and D minor. ';
-        this.gi +=
-            'The correct blowing technique and air speed are crucial for producing ';
-        this.gi +=
-            'the desired sound. Low notes need slow (warm) air and high notes need ';
-        this.gi += 'fast (cold) air. ';
-        this.gi +=
-            "For the seventh note on the flute's scale, there are no covered holes. ";
-        this.gi +=
-            'For better support you can keep your bottom hand (mostly right hand) pinky ';
-        this.gi += 'on the whistle. If that is uncomfortable you can cover the holes ';
-        this.gi += 'with the middle pads of your fingers, like you do when playing a bagpipe. ';
-        this.gi += 'Avoid covering a hole with a joint, as this may cause air leakage, ';
-        this.gi += 'which mostly results in a squeaking sound. ';
-        this.gi += '';
+        this.gi = `A tin whistle, Irish whistle or penny whistle is a six-holed wind instrument
+        that is often used in Irish folk music. You can also hear one in
+        Paul Simon's song You can call me Al.
+        The tin whistle is a diatonic instrument, but it is possible to play a chromatic
+        scale by using half-holing or special fingerings.
+        The range of a tin whistle is normally two octaves. The notes of the second
+        octave are played by blowing harder. Tin whistles are available in all 12 major
+        keys. The D key is the most common key. On every tin whistle you can
+        play in more keys by using advanced fingering or by partially covering a hole.
+        For example, with a D tin whistle, you can also easily play
+        in G, B minor and E minor. With a C tin whistle, you can also easily play
+        in F, A minor and D minor.
+        The correct blowing technique and air speed are crucial for producing
+        the desired sound. Low notes need slow (warm) air and high notes need
+        fast (cold) air.
+        For the seventh note on the flute's scale, there are no covered holes.
+        For better support you can keep your bottom hand (mostly right hand) pinky
+        on the whistle. If that is uncomfortable you can cover the holes
+        with the middle pads of your fingers, like you do when playing a bagpipe.
+        Avoid covering a hole with a joint, as this may cause air leakage,
+        which mostly results in a squeaking sound.`;
         this.info = {
             name: 'Tin whistle',
             category: 'Wind',

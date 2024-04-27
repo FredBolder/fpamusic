@@ -143,7 +143,7 @@ function test() {
       
     }
   }
-  //Utils.checkLinksValidity(linksToCheck);
+  Utils.checkLinksValidity(linksToCheck);
 
 
 }

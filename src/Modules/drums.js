@@ -3,80 +3,78 @@ import { Instrument } from "./instrument.js";
 class Drums extends Instrument {
   constructor() {
     super();
-    this.gi = "A drum set is a collection of drums and cymbals. ";
-    this.gi += "A standard drum set normally consists of a [bass drum♫], a [snare drum♫], ";
-    this.gi += "one or more [toms♫], a [hi-hat♫], a [crash cymbal♫] and a [ride cymbal♫]. ";
-    this.gi += "Before the existence of a drum set, different percussionists were ";
-    this.gi += "playing the separate drums. ";
-    this.gi += "In addition to acoustic drums, there are also electronic drums and ";
-    this.gi += "they are getting better and better.";
+    this.gi = `A drum set is a collection of drums and cymbals.
+    A standard drum set normally consists of a [bass drum♫], a [snare drum♫],
+    one or more [toms♫], a [hi-hat♫], a [crash cymbal♫] and a [ride cymbal♫].
+    Before the existence of a drum set, different percussionists were
+    playing the separate drums.
+    In addition to acoustic drums, there are also electronic drums and
+    they are getting better and better.`;
 
-    this.a1 = "Often when people are comparing acoustic drums with electronic drums (e-drums), ";
-    this.a1 += "they call acoustic drums real drums, but e-drums are as real as acoustic ";
-    this.a1 += "drums. They both have their advantages and disadvantages. E-drums can be very ";
-    this.a1 += "compact, because the sound is generated electronically. ";
-    this.a1 += "You don't need much space for them and they can be transported easily. On the ";
-    this.a1 += "other hand, there are also e-drum sets that look the same as an acoustic drum ";
-    this.a1 += "set and they have the same size. With acoustic drums, the sound depends a lot ";
-    this.a1 += "on where and how hard you hit, so you can make many different sounds. ";
-    this.a1 += "Expensive e-drums have also these possibilities, but not as much as acoustic ";
-    this.a1 += "drums. The cymbals of a cheap e-drum set mostly have two zones, so a ride ";
-    this.a1 += "cymbal can have the normal ride cymbal sound and the bell sound, but on an ";
-    this.a1 += "acoustic ride cymbal, you can make much more different sounds. ";
-    this.a1 += "Expensive e-drums can have advanced positional sensing, but you can imagine ";
-    this.a1 += "how many samples are needed for all these different positions and velocities ";
-    this.a1 += "(how hard you hit). Of course there are ways to go smoothly from one sample ";
-    this.a1 += "to the other. Not having so many different sounds can also be an advantage, ";
-    this.a1 += "because it always sounds good. Of course this makes it more difficult to ";
-    this.a1 += "switch from an electronic set to an acoustic set. ";
-    this.a1 += "E-drums can be much quieter than acoustic drums, because you can adjust the ";
-    this.a1 += "volume, but even when using headphones, there is sound because of hitting ";
-    this.a1 += "the drums and cymbals. You can use noise eaters for the pedals, but they are ";
-    this.a1 += "expensive. Mesh drum heads are much quieter than rubber pads and they feel ";
-    this.a1 += "more like acoustic drum skins. ";
-    this.a1 += "With e-drums you can switch very fast between totally different sounding ";
-    this.a1 += "drum kits. Most e-drums are designed as an alternative to an acoustic ";
-    this.a1 += "drum set, but you can see an e-drum set as a different instrument. With MIDI ";
-    this.a1 += "and a drum synthesizer the possibilities are endless. E-drums don't have to ";
-    this.a1 += "sound like acoustic drums, but they can. ";
-    this.a1 += "A disadvantage of e-drums is that you need electricity. Of course in ";
-    this.a1 += "bigger areas, you need microphones for acoustic drums. ";
-    this.a1 += "An e-drum set mostly doesn't look as impressive as an acoustic drum set, ";
-    this.a1 += "which can be important for a public performance. ";
-    this.a1 += "";
+    this.a1 = `Often when people are comparing acoustic drums with electronic drums (e-drums),
+    they call acoustic drums real drums, but e-drums are as real as acoustic
+    drums. They both have their advantages and disadvantages. E-drums can be very
+    compact, because the sound is generated electronically.
+    You don't need much space for them and they can be transported easily. On the
+    other hand, there are also e-drum sets that look the same as an acoustic drum
+    set and they have the same size. With acoustic drums, the sound depends a lot
+    on where and how hard you hit, so you can make many different sounds.
+    Expensive e-drums have also these possibilities, but not as much as acoustic
+    drums. The cymbals of a cheap e-drum set mostly have two zones, so a ride
+    cymbal can have the normal ride cymbal sound and the bell sound, but on an
+    acoustic ride cymbal, you can make much more different sounds.
+    Expensive e-drums can have advanced positional sensing, but you can imagine
+    how many samples are needed for all these different positions and velocities
+    (how hard you hit). Of course there are ways to go smoothly from one sample
+    to the other. Not having so many different sounds can also be an advantage,
+    because it always sounds good. Of course this makes it more difficult to
+    switch from an electronic set to an acoustic set.
+    E-drums can be much quieter than acoustic drums, because you can adjust the
+    volume, but even when using headphones, there is sound because of hitting
+    the drums and cymbals. You can use noise eaters for the pedals, but they are
+    expensive. Mesh drum heads are much quieter than rubber pads and they feel
+    more like acoustic drum skins.
+    With e-drums you can switch very fast between totally different sounding
+    drum kits. Most e-drums are designed as an alternative to an acoustic
+    drum set, but you can see an e-drum set as a different instrument. With MIDI
+    and a drum synthesizer the possibilities are endless. E-drums don't have to
+    sound like acoustic drums, but they can.
+    A disadvantage of e-drums is that you need electricity. Of course in
+    bigger areas, you need microphones for acoustic drums.
+    An e-drum set mostly doesn't look as impressive as an acoustic drum set,
+    which can be important for a public performance.`;
 
-    this.a2 = "There are many different drum sticks. This article will help you to find the ";
-    this.a2 += "drum sticks that are the best for you. ";
-    this.a2 += "Drum sticks are mostly made of wood (hickory, maple or oak). ";
-    this.a2 += "On most drum sticks there is a code. The number indicates the diameter. ";
-    this.a2 += "The higher the number, the thinner and lighter the stick. The most common ";
-    this.a2 += "numbers are 7, 5 and 2. ";
-    this.a2 += "The letter indicates the application (A = orchestra, B = band, ";
-    this.a2 += "D = dance band and S = street). The most common letters are A and B. ";
-    this.a2 += "5A is universal and a good choice for beginners. 7A is light and very suitable ";
-    this.a2 += "for jazz. 5B is slightly heavier than 5A and therefore good for rock. ";
-    this.a2 += "2B is heavy and good for hard rock and metal. ";
-    this.a2 += "Please note that, for example, 5B drum sticks from one brand may differ from ";
-    this.a2 += "5B drum sticks from another brand. ";
-    this.a2 += "The sound of acoustic cymbals depends on the tip of the drum stick. ";
-    this.a2 += "As you can see in the picture, there are many different tip shapes. ";
-    this.a2 += "The smaller the surface area that the cymbal touches, the brighter ";
-    this.a2 += "the sound. A large surface area results in a full and warm sound. ";
-    this.a2 += "The ball shape is very useful when you want a consistent and bright sound. ";
-    this.a2 += "You can use drum sticks with a tear drop tip for a full and warm sound.  ";
-    this.a2 += "Drum sticks with an oval tip are great when you want to make different ";
-    this.a2 += "sounds depending on the angle. A barrel shaped tip results in a punchy ";
-    this.a2 += "sound. ";
-    this.a2 += "There are also nylon tips. They produce a consistent and bright sound. ";
-    this.a2 += "With electronic drums, the shape of the tip makes no difference in the sound. ";
-    this.a2 += "If you play both acoustic drums and electronic drums, it is important not to ";
-    this.a2 += "play electronic drums with the same sticks you used to play acoustic drums. ";
-    this.a2 += "Drum sticks can easily be damaged by playing acoustic cymbals, and damaged ";
-    this.a2 += "drum sticks can damage electronic drums. ";
-    this.a2 += "When you want to buy a drum stick, you can check whether it is straight by ";
-    this.a2 += "rolling it on a flat surface. Some good drum stick brands are Vic Firth ";
-    this.a2 += "and Promark. ";
-    this.a2 += "";
+    this.a2 = `There are many different drum sticks. This article will help you to find the
+    drum sticks that are the best for you.
+    Drum sticks are mostly made of wood (hickory, maple or oak).
+    On most drum sticks there is a code. The number indicates the diameter.
+    The higher the number, the thinner and lighter the stick. The most common
+    numbers are 7, 5 and 2.
+    The letter indicates the application (A = orchestra, B = band,
+    D = dance band and S = street). The most common letters are A and B.
+    5A is universal and a good choice for beginners. 7A is light and very suitable
+    for jazz. 5B is slightly heavier than 5A and therefore good for rock.
+    2B is heavy and good for hard rock and metal.
+    Please note that, for example, 5B drum sticks from one brand may differ from
+    5B drum sticks from another brand.
+    The sound of acoustic cymbals depends on the tip of the drum stick.
+    As you can see in the picture, there are many different tip shapes.
+    The smaller the surface area that the cymbal touches, the brighter
+    the sound. A large surface area results in a full and warm sound.
+    The ball shape is very useful when you want a consistent and bright sound.
+    You can use drum sticks with a tear drop tip for a full and warm sound. 
+    Drum sticks with an oval tip are great when you want to make different
+    sounds depending on the angle. A barrel shaped tip results in a punchy
+    sound.
+    There are also nylon tips. They produce a consistent and bright sound.
+    With electronic drums, the shape of the tip makes no difference in the sound.
+    If you play both acoustic drums and electronic drums, it is important not to
+    play electronic drums with the same sticks you used to play acoustic drums.
+    Drum sticks can easily be damaged by playing acoustic cymbals, and damaged
+    drum sticks can damage electronic drums.
+    When you want to buy a drum stick, you can check whether it is straight by
+    rolling it on a flat surface. Some good drum stick brands are Vic Firth
+    and Promark.`;
 
     this.info = {
       name: "Drums",
