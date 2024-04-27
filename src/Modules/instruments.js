@@ -3,6 +3,7 @@ import { Darbuka } from "./darbuka.js";
 import { Drums } from "./drums.js";
 import { Guitar } from "./guitar.js";
 import { Kalimba } from "./kalimba.js";
+import { Melodica } from "./melodica.js";
 import { Piano } from "./piano.js";
 import { Recorder } from "./recorder.js";
 import { Tin_whistle } from "./tin_whistle.js";
@@ -45,6 +46,9 @@ class Instruments {
       case "kalimba":
         result = new Kalimba();
         break;
+      case "melodica":
+        result = new Melodica();
+        break;
       case "piano":
         result = new Piano();
         break;
@@ -78,6 +82,7 @@ class Instruments {
       "Drums",
       "Guitar",
       "Kalimba",
+      "Melodica",
       "Piano",
       "Recorder",
       "Tin whistle",

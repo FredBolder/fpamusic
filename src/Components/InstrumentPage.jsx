@@ -10,6 +10,7 @@ import imgDarbuka from "../Images/darbuka_1.jpg";
 import imgGuitar from "../Images/guitar_1.jpg";
 import imgDrums from "../Images/drums_1.jpg";
 import imgKalimba from "../Images/kalimba_1.jpg";
+import imgMelodica from "../Images/melodica_1.jpg";
 import imgPiano from "../Images/piano_1.jpg";
 import imgRecorder from "../Images/recorder_2_text.jpg";
 import imgTinWhistle from "../Images/tin_whistle_2.jpg";
@@ -65,6 +66,9 @@ function InstrumentPage() {
         break;
       case "kalimba":
         result = imgKalimba;
+        break;
+      case "melodica":
+        result = imgMelodica;
         break;
       case "piano":
         result = imgPiano;

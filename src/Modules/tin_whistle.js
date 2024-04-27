@@ -42,7 +42,9 @@ class Tin_whistle extends Instrument {
         this.gi +=
             'For better support you can keep your bottom hand (mostly right hand) pinky ';
         this.gi += 'on the whistle. If that is uncomfortable you can cover the holes ';
-        this.gi += 'with the middle pads of your fingers. ';
+        this.gi += 'with the middle pads of your fingers, like you do when playing a bagpipe. ';
+        this.gi += 'Avoid covering a hole with a joint, as this may cause air leakage, ';
+        this.gi += 'which mostly results in a squeaking sound. ';
         this.gi += '';
         this.info = {
             name: 'Tin whistle',
