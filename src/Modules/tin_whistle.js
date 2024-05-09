@@ -22,10 +22,11 @@ class Tin_whistle extends Instrument {
         The correct blowing technique and air speed are crucial for producing
         the desired sound. Low notes need slow (warm) air and high notes need
         fast (cold) air.
-        For the seventh note on the flute's scale, there are no covered holes.
+        For the seventh note on the scale, there are no covered holes.
         For better support you can keep your bottom hand (mostly right hand) pinky
-        on the whistle. If that is uncomfortable you can cover the holes
-        with the middle pads of your fingers, like you do when playing a bagpipe.
+        on the whistle. If that is uncomfortable you can cover only the last hole
+        with your bottom hand ring finger, since this will normally almost not change
+        the pitch.
         Avoid covering a hole with a joint, as this may cause air leakage,
         which mostly results in a squeaking sound.`;
         this.info = {
