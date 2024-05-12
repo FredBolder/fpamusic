@@ -20,6 +20,14 @@ class Recorder extends Instrument {
         the sound is starting to become bad. Do not use anti-condens in the
         playing-in period and avoid high notes in the beginning.`;
 
+        this.a2 = `In the photo, there is a wooden Soprano recorder and a plastic Alto 
+        recorder. An Alto recorder is bigger than a Soprano recorder which results in a 
+        lower pitch for a given fingering. Alto recorders are often in the key of F.
+        If you play an F recorder and cover all the holes with your fingers, you will 
+        hear an F. If you do the same on a Soprano recorder, you will hear a C.
+        Switching from Soprano to Alto requires getting used to the hole distance. 
+        The Alto recorder's soft volume is ideal for quiet practice.`;
+
         this.gi = `A recorder is a wind instrument.
         The available sizes are from very small to huge: Garklein, Sopranino,
         Soprano (Descant), Alto (Treble), Tenor, Basset, Great bass and Contra
@@ -64,6 +72,7 @@ class Recorder extends Instrument {
             generalInfo: this.gi,
             articles: {
                 maintenance_of_a_recorder: this.a1,
+                alto_recorder_vs_soprano_recorder: this.a2,
             },
             links: {
                 general: [
@@ -97,6 +106,7 @@ class Recorder extends Instrument {
                 youtube: [
                     "https://www.youtube.com/@Team_Recorder, Sarah Jeffery",
                     "https://www.youtube.com/@luciehorsch4454, Lucie Horsch",
+                    "https://www.youtube.com/@medhatrecord, Medhat Mamdouh (recorder and beatbox)",
                     "https://www.youtube.com/shorts/mbX59xpidW4",
                     "https://www.youtube.com/watch?v=hFnKmqAOmBs, Introducing the Baroque Recorder",
                     "https://www.youtube.com/watch?v=iw0E2xP57UA, Plastic vs Wood",

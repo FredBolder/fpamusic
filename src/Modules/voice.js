@@ -24,7 +24,8 @@ class Voice extends Instrument {
                 youtube: [
                     "https://www.youtube.com/@SingeoOfficial, Singeo",
                     "https://www.youtube.com/@ZanglesmetMaggie, Zangles met Maggie",
-                    "https://www.youtube.com/shorts/uiX4aQEn5eE, Instruments Sound Imitation"
+                    "https://www.youtube.com/shorts/uiX4aQEn5eE, Instruments Sound Imitation",
+                    "https://www.youtube.com/watch?v=LeBiXBic3sE, Best Beatboxer in the World"
                 ],
             }
         };
