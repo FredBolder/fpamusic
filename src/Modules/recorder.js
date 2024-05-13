@@ -1,4 +1,4 @@
-import { Instrument } from "./instrument.js";
+import { Instrument } from './instrument.js';
 
 class Recorder extends Instrument {
     constructor() {
@@ -7,12 +7,16 @@ class Recorder extends Instrument {
         keeping it clean. Make sure that you have brushed your teeth and
         washed your hands before playing. Warm the head under your arm to
         prevent condensation.
-        After playing you should dry your recorder. First disconnect the
-        head and clean both parts with a cleaning rod with cloth or a
+        After playing you should dry your recorder. Disassemble the recorder by gently 
+        twisting and pulling the pieces apart.
+        clean the recorder parts with a cleaning rod with cloth or a
         cleaning brush.
         You can remove moisture in the mouthpiece by closing with your hand
         the end and blow into the window. The moisture will emerge from
         the mouthpiece.
+        Regularly apply grease to the joints. This reduces friction between the joints, 
+        making it easier to assemble and disassemble the instrument, which prevents damage.
+        It also prevents air leaks that can affect the instrument's sound quality.
         New wooden recorders must be played in. Play the recorder daily in
         the first six weeks, but not too long. You can play 5 minutes
         a day in the first week, 10 minutes a day in the second week, 15
@@ -28,7 +32,7 @@ class Recorder extends Instrument {
         Switching from Soprano to Alto requires getting used to the hole distance. 
         The Alto recorder's soft volume is ideal for quiet practice.`;
 
-        this.gi = `A recorder is a wind instrument.
+        this.gi = `A recorder is a chromatic wind instrument.
         The available sizes are from very small to huge: Garklein, Sopranino,
         Soprano (Descant), Alto (Treble), Tenor, Basset, Great bass and Contra
         bass. The smaller the size, the higher the pitch.
@@ -67,8 +71,8 @@ class Recorder extends Instrument {
         This takes practice.`;
 
         this.info = {
-            name: "Recorder",
-            category: "Wind",
+            name: 'Recorder',
+            category: 'Wind',
             generalInfo: this.gi,
             articles: {
                 maintenance_of_a_recorder: this.a1,
@@ -76,54 +80,52 @@ class Recorder extends Instrument {
             },
             links: {
                 general: [
-                    "https://en.wikipedia.org/wiki/Recorder_(musical_instrument), Recorder - Wikipedia",
-                    "https://en.wikipedia.org/wiki/Soprano_recorder,  Soprano recorder - Wikipedia",
-                    "https://learnrecorder.com/"
+                    'https://en.wikipedia.org/wiki/Recorder_(musical_instrument), Recorder - Wikipedia',
+                    'https://en.wikipedia.org/wiki/Soprano_recorder,  Soprano recorder - Wikipedia',
+                    'https://learnrecorder.com/',
                 ],
                 beginners_lessons: [
-                    "https://www.youtube.com/watch?v=-d6uVjIEkMY, First lesson",
-                    "https://www.youtube.com/playlist?list=PLYVfQ47cCHaCRrSS8jeNptYyXGx3DqPtH",
-                    "https://www.youtube.com/watch?v=z4tLQ09_YZE, All notes",
-                    "https://www.youtube.com/watch?v=PCGjTz2LOPA, Top 10 Recorder Mistakes"
+                    'https://www.youtube.com/watch?v=-d6uVjIEkMY, First lesson',
+                    'https://www.youtube.com/playlist?list=PLYVfQ47cCHaCRrSS8jeNptYyXGx3DqPtH',
+                    'https://www.youtube.com/watch?v=z4tLQ09_YZE, All notes',
+                    'https://www.youtube.com/watch?v=PCGjTz2LOPA, Top 10 Recorder Mistakes',
                 ],
-                songs:
-                    [
-                        "https://www.youcanplayit.com/",
-                        "https://www.capotastomusic.com/soprano-recorder-sheet-music/easy.htm"
-                    ],
+                songs: [
+                    'https://www.youcanplayit.com/',
+                    'https://www.capotastomusic.com/soprano-recorder-sheet-music/easy.htm',
+                ],
                 articles: [
-                    "https://professionalcomposers.com/flute-vs-recorder/, Flute vs Recorder",
-                    "https://hub.yamaha.com/winds/wood/recorders-baroque-vs-german/, Baroque vs German",
-                    "https://aswltd.com/finger.htm, Recorder Fingering Systems",
-                    "http://www.saundersrecorders.com/topnotes.htm, High notes"
+                    'https://professionalcomposers.com/flute-vs-recorder/, Flute vs Recorder',
+                    'https://hub.yamaha.com/winds/wood/recorders-baroque-vs-german/, Baroque vs German',
+                    'https://aswltd.com/finger.htm, Recorder Fingering Systems',
+                    'http://www.saundersrecorders.com/topnotes.htm, High notes',
                 ],
                 fingering: [
-                    "https://americanrecorder.org/recorder_fingering_charts.php"
+                    'https://americanrecorder.org/recorder_fingering_charts.php',
                 ],
                 virtual: [
-                    "https://www.doctormusik.com/apps-and-games/virtual-recorder/"
+                    'https://www.doctormusik.com/apps-and-games/virtual-recorder/',
                 ],
                 youtube: [
-                    "https://www.youtube.com/@Team_Recorder, Sarah Jeffery",
-                    "https://www.youtube.com/@luciehorsch4454, Lucie Horsch",
-                    "https://www.youtube.com/@medhatrecord, Medhat Mamdouh (recorder and beatbox)",
-                    "https://www.youtube.com/shorts/mbX59xpidW4",
-                    "https://www.youtube.com/watch?v=hFnKmqAOmBs, Introducing the Baroque Recorder",
-                    "https://www.youtube.com/watch?v=iw0E2xP57UA, Plastic vs Wood",
-                    "https://www.youtube.com/watch?v=2LIyUmfgyFw, How to Write for Recorder in 5 Minutes"
+                    'https://www.youtube.com/@Team_Recorder, Sarah Jeffery',
+                    'https://www.youtube.com/@luciehorsch4454, Lucie Horsch',
+                    'https://www.youtube.com/@medhatrecord, Medhat Mamdouh (recorder and beatbox)',
+                    'https://www.youtube.com/shorts/mbX59xpidW4',
+                    'https://www.youtube.com/watch?v=hFnKmqAOmBs, Introducing the Baroque Recorder',
+                    'https://www.youtube.com/watch?v=iw0E2xP57UA, Plastic vs Wood',
+                    'https://www.youtube.com/watch?v=2LIyUmfgyFw, How to Write for Recorder in 5 Minutes',
                 ],
                 books: [
-                    "https://www.dansblad.nl/brrecorder/, Ballroom & Latin Dances for Soprano Recorder",
-                    "https://www.dansblad.nl/grrecorder/, Greek Dances for Soprano Recorder"
+                    'https://www.dansblad.nl/brrecorder/, Ballroom & Latin Dances for Soprano Recorder',
+                    'https://www.dansblad.nl/grrecorder/, Greek Dances for Soprano Recorder',
                 ],
                 funny: [
-                    "https://www.youtube.com/@Rec0rderMast3r",
-                    "https://www.youtube.com/watch?v=2pc67IJZr9o"
-                ]
-            }
+                    'https://www.youtube.com/@Rec0rderMast3r',
+                    'https://www.youtube.com/watch?v=2pc67IJZr9o',
+                ],
+            },
         };
     }
-
 }
 
 export { Recorder };
