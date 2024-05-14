@@ -9,7 +9,7 @@ class Recorder extends Instrument {
         prevent condensation.
         After playing you should dry your recorder. Disassemble the recorder by gently 
         twisting and pulling the pieces apart.
-        clean the recorder parts with a cleaning rod with cloth or a
+        Clean the recorder parts with a cleaning rod with cloth or a
         cleaning brush.
         You can remove moisture in the mouthpiece by closing with your hand
         the end and blow into the window. The moisture will emerge from
@@ -29,7 +29,7 @@ class Recorder extends Instrument {
         lower pitch for a given fingering. Alto recorders are often in the key of F.
         If you play an F recorder and cover all the holes with your fingers, you will 
         hear an F. If you do the same on a Soprano recorder, you will hear a C.
-        Switching from Soprano to Alto requires getting used to the hole distance. 
+        Switching between Soprano and Alto requires adjusting to different hole distances. 
         The Alto recorder's soft volume is ideal for quiet practice.`;
 
         this.gi = `A recorder is a chromatic wind instrument.
