@@ -3,6 +3,8 @@ import { Instrument } from "./instrument.js";
 class Piano extends Instrument {
     constructor() {
         super();
+        this.a1 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
+        this.a2 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
         this.gi = `A piano is a keyboard instrument. Normally there are black and white keys
         and the black keys are raised above the white keys.
         The acoustic piano types are the grand piano and the upright piano.
@@ -14,6 +16,10 @@ class Piano extends Instrument {
             name: "Piano",
             category: "Keyboard",
             generalInfo: this.gi,
+            articles: {
+                chords_in_major_keys: this.a1,
+                chords_in_minor_keys: this.a2,
+            },
             links: {
                 general: [
                     "https://en.wikipedia.org/wiki/Piano, Piano - Wikipedia",

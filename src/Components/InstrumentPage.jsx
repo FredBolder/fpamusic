@@ -20,6 +20,8 @@ import imgDrumSticks from '../Images/drum_sticks.jpg';
 import imgMaintenanceRecorder from '../Images/maintenance_of_a_recorder.jpg';
 import imgAltoRecorderVsSopranoRecorder from '../Images/alto_recorder_vs_soprano_recorder.jpg';
 import imgTinWhistleFingeringChart from '../Images/tin_whistle_fingering_chart.jpg';
+import imgChordsInMajorKeys from '../Images/chords_in_major_keys.jpg';
+import imgChordsInMinorKeys from '../Images/chords_in_minor_keys.jpg';
 import sndDoum from '../Sounds/doum.wav';
 import sndKa from '../Sounds/ka.wav';
 import sndTek from '../Sounds/tek.wav';
@@ -97,6 +99,12 @@ function InstrumentPage() {
                 break;
             case 'a:tin_whistle_fingering_chart':
                 result = imgTinWhistleFingeringChart;
+                break;
+            case 'a:chords_in_major_keys':
+                result = imgChordsInMajorKeys;
+                break;
+            case 'a:chords_in_minor_keys':
+                result = imgChordsInMinorKeys;
                 break;
             default:
                 result = null;
