@@ -22,6 +22,7 @@ import imgAltoRecorderVsSopranoRecorder from '../Images/alto_recorder_vs_soprano
 import imgTinWhistleFingeringChart from '../Images/tin_whistle_fingering_chart.jpg';
 import imgChordsInMajorKeys from '../Images/chords_in_major_keys.jpg';
 import imgChordsInMinorKeys from '../Images/chords_in_minor_keys.jpg';
+import imgNotesOnAPianoKeyboard from '../Images/notes_on_a_piano_keyboard.jpg';
 import sndDoum from '../Sounds/doum.wav';
 import sndKa from '../Sounds/ka.wav';
 import sndTek from '../Sounds/tek.wav';
@@ -105,6 +106,9 @@ function InstrumentPage() {
                 break;
             case 'a:chords_in_minor_keys':
                 result = imgChordsInMinorKeys;
+                break;
+            case 'a:notes_on_a_piano_keyboard':
+                result = imgNotesOnAPianoKeyboard;
                 break;
             default:
                 result = null;
