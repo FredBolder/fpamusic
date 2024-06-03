@@ -19,6 +19,8 @@ import imgVoice from '../Images/voice_1.jpg';
 import imgDrumSticks from '../Images/drum_sticks.jpg';
 import imgMaintenanceRecorder from '../Images/maintenance_of_a_recorder.jpg';
 import imgAltoRecorderVsSopranoRecorder from '../Images/alto_recorder_vs_soprano_recorder.jpg';
+import imgBaroqueFingeringC from '../Images/baroque_fingering_c_recorders.jpg';
+import imgBaroqueFingeringF from '../Images/baroque_fingering_f_recorders.jpg';
 import imgTinWhistleFingeringChart from '../Images/tin_whistle_fingering_chart.jpg';
 import imgChordsInMajorKeys from '../Images/chords_in_major_keys.jpg';
 import imgChordsInMinorKeys from '../Images/chords_in_minor_keys.jpg';
@@ -97,6 +99,12 @@ function InstrumentPage() {
                 break;
             case 'a:alto_recorder_vs_soprano_recorder':
                 result = imgAltoRecorderVsSopranoRecorder;
+                break;
+            case 'a:baroque_fingering_c_recorders':
+                result = imgBaroqueFingeringC;
+                break;
+            case 'a:baroque_fingering_f_recorders':
+                result = imgBaroqueFingeringF;
                 break;
             case 'a:tin_whistle_fingering_chart':
                 result = imgTinWhistleFingeringChart;
