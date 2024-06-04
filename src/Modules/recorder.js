@@ -32,9 +32,11 @@ class Recorder extends Instrument {
         Switching between Soprano and Alto requires adjusting to different hole distances. 
         The Alto recorder's soft volume is ideal for quiet practice.`;
 
-        this.a3 = `You can use this fingering chart for C recorders like Soprano and Tenor.`;
+        this.a3 = `You can use this fingering chart for C recorders like Soprano and Tenor with a Baroque fingering.`;
 
-        this.a4 = `You can use this fingering chart for F recorders like Sopranino and Alto.`;
+        this.a4 = `You can use this fingering chart for F recorders like Sopranino and Alto with a Baroque fingering.`;
+
+        this.a5 = `You can use this fingering chart for C recorders with a German fingering.`;
 
         this.gi = `A recorder is a chromatic wind instrument.
         The available sizes are from very small to huge: Garklein, Sopranino,
@@ -83,6 +85,7 @@ class Recorder extends Instrument {
                 alto_recorder_vs_soprano_recorder: this.a2,
                 baroque_fingering_c_recorders: this.a3,
                 baroque_fingering_f_recorders: this.a4,
+                german_fingering_c_recorders: this.a5,
             },
             links: {
                 general: [
