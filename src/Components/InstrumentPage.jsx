@@ -26,6 +26,7 @@ import imgTinWhistleFingeringChart from '../Images/tin_whistle_fingering_chart.j
 import imgChordsInMajorKeys from '../Images/chords_in_major_keys.jpg';
 import imgChordsInMinorKeys from '../Images/chords_in_minor_keys.jpg';
 import imgNotesOnAPianoKeyboard from '../Images/notes_on_a_piano_keyboard.jpg';
+import imgRockFills from '../Images/rock_fills.jpg';
 import sndDoum from '../Sounds/doum.wav';
 import sndKa from '../Sounds/ka.wav';
 import sndTek from '../Sounds/tek.wav';
@@ -121,6 +122,9 @@ function InstrumentPage() {
                 break;
             case 'a:notes_on_a_piano_keyboard':
                 result = imgNotesOnAPianoKeyboard;
+                break;
+            case 'a:rock_fills':
+                result = imgRockFills;
                 break;
             default:
                 result = null;

@@ -76,6 +76,9 @@ class Drums extends Instrument {
     rolling it on a flat surface. Some good drum stick brands are Vic Firth
     and Promark.`;
 
+    this.a3 = `BD = bass drum, SD = snare drum, HT = high tom, MT = mid tom,
+    FT = floor tom, HH = hi-hat`;
+
     this.info = {
       name: "Drums",
       category: "Percussion",
@@ -83,6 +86,7 @@ class Drums extends Instrument {
       articles: {
         acoustic_vs_electronic_drums: this.a1,
         drum_sticks: this.a2,
+        rock_fills: this.a3,
       },
       links: {
         general: [
@@ -95,6 +99,7 @@ class Drums extends Instrument {
         ],
         patterns: [
           "https://drumbeatsonline.com/notation-20-must-know-drum-beats",
+          "https://www.youtube.com/watch?v=Gc2K9JQAyRE",
           "https://thedrumninja.com/odd-time-drumming-5-8/, 5/8",
           "https://thedrumninja.com/odd-time-drumming-7-8/, 7/8"
         ],

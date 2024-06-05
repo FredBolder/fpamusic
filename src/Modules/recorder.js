@@ -131,6 +131,8 @@ class Recorder extends Instrument {
                 funny: [
                     'https://www.youtube.com/@Rec0rderMast3r',
                     'https://www.youtube.com/watch?v=2pc67IJZr9o',
+                    'https://www.youtube.com/watch?v=iABAU4UsqpI',
+                    'https://www.youtube.com/watch?v=TVvX_64vtIE',
                 ],
             },
         };
