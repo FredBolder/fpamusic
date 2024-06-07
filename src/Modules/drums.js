@@ -77,6 +77,9 @@ class Drums extends Instrument {
     and Promark.`;
 
     this.a3 = `BD = bass drum, SD = snare drum, HT = high tom, MT = mid tom,
+    FT = floor tom, HH = hi-hat, OH = open hi-hat, PH = pedal hi-hat, RC = ride cymbal`;
+
+    this.a4 = `BD = bass drum, SD = snare drum, HT = high tom, MT = mid tom,
     FT = floor tom, HH = hi-hat`;
 
     this.info = {
@@ -86,7 +89,8 @@ class Drums extends Instrument {
       articles: {
         acoustic_vs_electronic_drums: this.a1,
         drum_sticks: this.a2,
-        rock_fills: this.a3,
+        drum_patterns: this.a3,
+        rock_fills: this.a4,
       },
       links: {
         general: [
@@ -108,7 +112,7 @@ class Drums extends Instrument {
           "https://www.musicca.com/drums",
         ],
         youtube: [
-          "https://www.youtube.com/@65Drums"
+          "https://www.youtube.com/@65Drums",
         ],
         books: [
           "https://www.dansblad.nl/odd/, Odd Time Drum Grooves",
