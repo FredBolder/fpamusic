@@ -3,6 +3,8 @@ import { Instrument } from './instrument.js';
 class Bongos extends Instrument {
     constructor() {
         super();
+        this.a1 = `F = fingers, M = muted, O = open, T = thumb, L = left hand, R = right hand`;
+
         this.gi = `Bongos consist of a small drum (macho) and a slightly larger drum (hembra)
         which are joined by a wooden bridge. They are mostly played with both hands
         and held between the legs. They can also be played with sticks. In that
@@ -17,6 +19,9 @@ class Bongos extends Instrument {
             name: 'Bongos',
             category: 'Percussion',
             generalInfo: this.gi,
+            articles: {
+                martillo_fills: this.a1,
+            },
             links: {
                 general: [
                     'https://en.wikipedia.org/wiki/Bongo_drum, Bongo drum - Wikipedia',

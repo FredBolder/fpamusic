@@ -28,6 +28,7 @@ import imgChordsInMinorKeys from '../Images/chords_in_minor_keys.jpg';
 import imgNotesOnAPianoKeyboard from '../Images/notes_on_a_piano_keyboard.jpg';
 import imgDrumPatterns from '../Images/drum_patterns.jpg';
 import imgRockFills from '../Images/rock_fills.jpg';
+import imgMartilloFills from '../Images/martillo_fills.jpg';
 import sndDoum from '../Sounds/doum.wav';
 import sndKa from '../Sounds/ka.wav';
 import sndTek from '../Sounds/tek.wav';
@@ -129,6 +130,9 @@ function InstrumentPage() {
                 break;
             case 'a:rock_fills':
                 result = imgRockFills;
+                break;
+            case 'a:martillo_fills':
+                result = imgMartilloFills;
                 break;
             default:
                 result = null;
