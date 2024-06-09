@@ -29,6 +29,7 @@ import imgNotesOnAPianoKeyboard from '../Images/notes_on_a_piano_keyboard.jpg';
 import imgDrumPatterns from '../Images/drum_patterns.jpg';
 import imgRockFills from '../Images/rock_fills.jpg';
 import imgMartilloFills from '../Images/martillo_fills.jpg';
+import imgDarbukaPatterns from '../Images/darbuka_patterns.jpg';
 import sndDoum from '../Sounds/doum.wav';
 import sndKa from '../Sounds/ka.wav';
 import sndTek from '../Sounds/tek.wav';
@@ -133,6 +134,9 @@ function InstrumentPage() {
                 break;
             case 'a:martillo_fills':
                 result = imgMartilloFills;
+                break;
+            case 'a:darbuka_patterns':
+                result = imgDarbukaPatterns;
                 break;
             default:
                 result = null;

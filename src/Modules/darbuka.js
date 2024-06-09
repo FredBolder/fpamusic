@@ -3,6 +3,7 @@ import { Instrument } from './instrument.js';
 class Darbuka extends Instrument {
     constructor() {
         super();
+        this.a1 = `D = doum, K = ka, T = tek, Lower case = softer`;
         this.gi = `A darbuka is a goblet shaped drum. It is known under many other
         names like globet drum, doumbek and τουμπερλέκι (toumperleki).
         There are many different possible strokes, but the main strokes are
@@ -19,6 +20,9 @@ class Darbuka extends Instrument {
             name: 'Darbuka',
             category: 'Percussion',
             generalInfo: this.gi,
+            articles: {
+                darbuka_patterns: this.a1,
+            },
             links: {
                 general: [
                     'https://en.wikipedia.org/wiki/Goblet_drum, Globet drum - Wikipedia',
