@@ -34,6 +34,9 @@ class Melodica extends Instrument {
                     'https://www.youtube.com/@MelodicaMen, Melodica Men',
                     'https://www.youtube.com/@dr.melodicadavidbrancazio8860, Dr. Melodica (David Brancazio)',
                 ],
+                funny: [
+                    'https://www.youtube.com/watch?v=8_9C3Q9AAEc',
+                ],
             },
         };
     }
