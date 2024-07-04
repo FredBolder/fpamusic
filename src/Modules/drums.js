@@ -123,6 +123,9 @@ class Drums extends Instrument {
           "https://fredbolder.github.io/fredrums/, frEDrums - Stand alone MIDI drum sound module and synthesizer for electronic drums",
           "https://www.dansblad.nl/dr/, DR - Free drum machine for Windows"
         ],
+        AI: [
+          "https://www.muski.io/rhythm"
+        ],
       },
     };
   }

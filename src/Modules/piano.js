@@ -15,6 +15,9 @@ class Piano extends Instrument {
         space, they blended together and were difficult to see.`;
         this.a2 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
         this.a3 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
+        this.a4 = `Chord progressions are often notated with Roman numerals, which makes them key-independent.
+        Below every progression, there is an example with chords in a certain key, but the progressions can be transposed 
+        to any key.`;
         this.gi = `A piano is a keyboard instrument. Normally there are black and white keys
         and the black keys are raised above the white keys.
         The acoustic piano types are the grand piano and the upright piano.
@@ -30,6 +33,7 @@ class Piano extends Instrument {
                 notes_on_a_piano_keyboard: this.a1,
                 chords_in_major_keys: this.a2,
                 chords_in_minor_keys: this.a3,
+                chord_progressions_for_different_emotions: this.a4,
             },
             links: {
                 general: [

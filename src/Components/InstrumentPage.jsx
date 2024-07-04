@@ -25,6 +25,7 @@ import imgGermanFingeringC from '../Images/german_fingering_c_recorders.jpg';
 import imgTinWhistleFingeringChart from '../Images/tin_whistle_fingering_chart.jpg';
 import imgChordsInMajorKeys from '../Images/chords_in_major_keys.jpg';
 import imgChordsInMinorKeys from '../Images/chords_in_minor_keys.jpg';
+import imgChordProgressionsForDifferentEmotions from '../Images/chord_progressions_for_different_emotions.jpg'
 import imgNotesOnAPianoKeyboard from '../Images/notes_on_a_piano_keyboard.jpg';
 import imgDrumPatterns from '../Images/drum_patterns.jpg';
 import imgRockFills from '../Images/rock_fills.jpg';
@@ -122,6 +123,9 @@ function InstrumentPage() {
                 break;
             case 'a:chords_in_minor_keys':
                 result = imgChordsInMinorKeys;
+                break;
+            case 'a:chord_progressions_for_different_emotions':
+                result = imgChordProgressionsForDifferentEmotions;
                 break;
             case 'a:notes_on_a_piano_keyboard':
                 result = imgNotesOnAPianoKeyboard;
@@ -241,7 +245,7 @@ function InstrumentPage() {
 
                                             {selectedArticle === article &&
                                                 getImage('a:' + article) !==
-                                                    null && (
+                                                null && (
                                                     <img
                                                         src={getImage(
                                                             'a:' + article
