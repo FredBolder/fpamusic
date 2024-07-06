@@ -5,6 +5,9 @@ class Guitar extends Instrument {
         super();
         this.a1 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
         this.a2 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
+        this.a3 = `Chord progressions are often notated with Roman numerals, which makes them key-independent.
+        Below every progression, there is an example with chords in a certain key, but the progressions can be transposed 
+        to any key.`;
         this.gi = `A Guitar has normally six strings and is tuned from low to high
         E A D G B E (open strings). When the guitar is held against the body,
         the string with the lowest note is above. The sound is produced by
@@ -29,6 +32,7 @@ class Guitar extends Instrument {
             articles: {
                 chords_in_major_keys: this.a1,
                 chords_in_minor_keys: this.a2,
+                chord_progressions_for_different_emotions: this.a3,
             },
             links: {
                 general: [
