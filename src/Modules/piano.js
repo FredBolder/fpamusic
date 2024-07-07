@@ -57,6 +57,11 @@ class Piano extends Instrument {
                     'https://www.dansblad.nl/brpiano/, Ballroom & Latin Dance Rhythms for Piano',
                     'https://www.dansblad.nl/grpiano/, Greek Dance Rhythms for Piano',
                 ],
+                Funny: [
+                    'https://www.youtube.com/watch?v=h080Sn0sesw, How To Become A Rockstar Overnight Prank',
+                    'https://www.youtube.com/watch?v=Zop4GJm6yzQ, Fake Piano Busker',
+                    'https://www.youtube.com/watch?v=lO9zzecyhDs, Slamming Hand In Piano Prank',
+                ],
             },
         };
     }

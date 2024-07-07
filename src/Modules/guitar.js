@@ -61,7 +61,12 @@ class Guitar extends Instrument {
                 youtube: [
                     "https://www.youtube.com/watch?v=HQBKP2uStcE, The Notes"
                 ],
-            }
+                Funny: [
+                    'https://www.youtube.com/watch?v=okYXX2U63t8, Terrible Table Guitarist Prank',
+                    'https://www.youtube.com/watch?v=U2Ssgvh6cuI, Guitar Smashing Prank',
+                    'https://www.youtube.com/watch?v=aXShee876Is, Guitar Grandma',
+                ],
+         }
         };
     }
 
