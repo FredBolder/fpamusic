@@ -27,6 +27,10 @@ class Voice extends Instrument {
                     "https://www.youtube.com/shorts/uiX4aQEn5eE, Instruments Sound Imitation",
                     "https://www.youtube.com/watch?v=LeBiXBic3sE, Best Beatboxer in the World"
                 ],
+                greek_karaoke: [
+                    "https://www.youtube.com/@vasilisgeorgaris.Greek.Karaoke",
+                    "https://www.youtube.com/playlist?list=PLJuEia4k65qE1f7BhYfpQjQ-AFH8KaMly"
+                ],
             }
         };
     }
