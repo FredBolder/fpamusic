@@ -29,7 +29,10 @@ class Voice extends Instrument {
                 ],
                 greek_karaoke: [
                     "https://www.youtube.com/@vasilisgeorgaris.Greek.Karaoke",
-                    "https://www.youtube.com/playlist?list=PLJuEia4k65qE1f7BhYfpQjQ-AFH8KaMly"
+                    "https://www.youtube.com/playlist?list=PLJuEia4k65qE1f7BhYfpQjQ-AFH8KaMly",
+                    "https://www.youtube.com/playlist?list=PLTmjlwfmMG1KNGHQcfMgkI5J9HFkrFZcT",
+                    "https://www.youtube.com/playlist?list=PL6iy_mJPjZD6Y38-bUJIpRxMIKrMJCc_c",
+                    "https://www.youtube.com/@PastroPastro1"
                 ],
             }
         };
