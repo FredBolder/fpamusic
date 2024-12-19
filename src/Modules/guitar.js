@@ -52,7 +52,6 @@ class Guitar extends Instrument {
                 chords: [
                     "https://www.songdrafting.com/chord-dictionary-search",
                     "https://www.all-guitar-chords.com/",
-                    "https://www.guitarchordsworld.com/",
                     "https://www.learnandmaster.com/guitar-blog/gibsons-learn-master-guitar/barre-chord-magic-for-guitar"
                 ],
                 articles: [

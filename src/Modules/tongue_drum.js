@@ -22,7 +22,6 @@ class Tongue_drum extends Instrument {
             links: {
                 general: [
                     'https://en.wikipedia.org/wiki/Steel_tongue_drum, Steel tongue drum - Wikipedia',
-                    'https://dorhymi.com/how-to-play-steel-tongue-drum/',
                 ],
                 beginners_lessons: [
                     'https://www.youtube.com/watch?v=VT6l8pl7xdQ',
