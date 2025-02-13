@@ -111,6 +111,10 @@ class Drums extends Instrument {
           "https://www.virtualdrumming.com/",
           "https://www.musicca.com/drums",
         ],
+        online_drum_machines: [
+          "https://fredbolder.github.io/dr/",
+          "https://www.onemotion.com/drum-machine/",
+        ],
         youtube: [
           "https://www.youtube.com/@65Drums",
         ],
