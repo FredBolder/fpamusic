@@ -30,6 +30,10 @@ class Voice extends Instrument {
                 singers: [
                     "https://www.dansblad.nl/greeksingers/, Greek Singers"
                 ],
+                english_karaoke: [
+                    "https://www.youtube.com/@tomybgvideo6299",
+                    "https://www.youtube.com/@AcousticLounge"
+                ],
                 greek_karaoke: [
                     "https://www.youtube.com/@vasilisgeorgaris.Greek.Karaoke",
                     "https://www.youtube.com/playlist?list=PLJuEia4k65qE1f7BhYfpQjQ-AFH8KaMly",
