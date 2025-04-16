@@ -41,6 +41,14 @@ class Voice extends Instrument {
                     "https://www.youtube.com/playlist?list=PL6iy_mJPjZD6Y38-bUJIpRxMIKrMJCc_c",
                     "https://www.youtube.com/@PastroPastro1"
                 ],
+                dutch_karaoke: [
+                    "https://www.youtube.com/@driveinshowthatsmusic"
+                ],
+                rhyming_dictionaries: [
+                    "https://www.rhymezone.com/, English",
+                    "https://gr.azrhymes.com/, Grieks",
+                    "https://rijmwoordenboek.vandale.nl/, Dutch"
+                ],
             }
         };
     }
