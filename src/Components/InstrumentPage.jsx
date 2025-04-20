@@ -15,6 +15,7 @@ import imgPiano from '../Images/piano_1.jpg';
 import imgRecorder from '../Images/recorder_2_text.jpg';
 import imgTinWhistle from '../Images/tin_whistle_2.jpg';
 import imgTongueDrum from '../Images/tongue_drum_1.jpg';
+import imgUkulele from '../Images/ukulele_1.jpg';
 import imgVoice from '../Images/voice_1.jpg';
 import imgDrumSticks from '../Images/drum_sticks.jpg';
 import imgMaintenanceRecorder from '../Images/maintenance_of_a_recorder.jpg';
@@ -93,6 +94,9 @@ function InstrumentPage() {
                 break;
             case 'tongue drum':
                 result = imgTongueDrum;
+                break;
+            case 'ukulele':
+                result = imgUkulele;
                 break;
             case 'voice':
                 result = imgVoice;

@@ -15,7 +15,7 @@ class Guitar extends Instrument {
         a string with the weak hand, shortens the string's vibrating length
         resulting in a higher pitch. The frets (thin strips) make it easy to
         play the correct notes. Each fret represents one semitone, so pressing
-        the E string behind the first fret, results in a F.
+        the E string behind the first fret, results in an F.
         To avoid damaging your nails, you can use a plectrum (pick) to pluck or
         strum the snares. Using a plectrum results also in a different sound.
         Guitars are often used to accompany a singer. The singer can of course
@@ -52,7 +52,8 @@ class Guitar extends Instrument {
                 chords: [
                     "https://www.songdrafting.com/chord-dictionary-search",
                     "https://www.all-guitar-chords.com/",
-                    "https://www.learnandmaster.com/guitar-blog/gibsons-learn-master-guitar/barre-chord-magic-for-guitar"
+                    "https://www.learnandmaster.com/guitar-blog/gibsons-learn-master-guitar/barre-chord-magic-for-guitar",
+                    "https://gtrlib.com/"
                 ],
                 articles: [
                     "https://www.theguitarlesson.com/guitar-lesson-blog/beginner-guitar-lessons/guitar-string-mnemonic-acronyms/"

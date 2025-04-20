@@ -16,6 +16,7 @@ import imgPiano from "../Images/piano_1s.jpg";
 import imgRecorder from "../Images/recorder_1s.jpg";
 import imgTinWhistle from "../Images/tin_whistle_2s.jpg";
 import imgTongueDrum from "../Images/tongue_drum_1s.jpg";
+import imgUkulele from "../Images/ukulele_1s.jpg";
 import imgVoice from "../Images/voice_1s.jpg";
 import "./assets/css/style.css";
 
@@ -64,6 +65,9 @@ function InstrumentsPage() {
         break;
       case "tongue drum":
         result = imgTongueDrum;
+        break;
+      case "ukulele":
+        result = imgUkulele;
         break;
       case "voice":
         result = imgVoice;

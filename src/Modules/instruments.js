@@ -8,6 +8,7 @@ import { Piano } from "./piano.js";
 import { Recorder } from "./recorder.js";
 import { Tin_whistle } from "./tin_whistle.js";
 import { Tongue_drum } from "./tongue_drum.js";
+import { Ukulele } from "./ukulele.js";
 import { Voice } from "./voice.js";
 
 class Instruments {
@@ -61,6 +62,9 @@ class Instruments {
       case "tongue drum":
         result = new Tongue_drum();
         break;
+      case "ukulele":
+        result = new Ukulele();
+        break;
       case "voice":
         result = new Voice();
         break;
@@ -87,6 +91,7 @@ class Instruments {
       "Recorder",
       "Tin whistle",
       "Tongue drum",
+      "Ukulele",
       "Voice",
     ];
   }
