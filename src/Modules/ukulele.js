@@ -3,9 +3,10 @@ import { Instrument } from "./instrument.js";
 class Ukulele extends Instrument {
     constructor() {
         super();
-        this.a1 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
+        this.a1 = `The chord diagrams are for Ukuleles with an G C E A tuning.`;
         this.a2 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
-        this.a3 = `Chord progressions are often notated with Roman numerals, which makes them key-independent.
+        this.a3 = `Behind some chords, there is an enharmonic equivalent in parentheses, which is more commonly known.`;
+        this.a4 = `Chord progressions are often notated with Roman numerals, which makes them key-independent.
         Below every progression, there is an example with chords in a certain key, but the progressions can be transposed 
         to any key.`;
         this.gi = `An Ukulele has normally four strings and is tuned from top to bottom (playing position)
@@ -24,9 +25,10 @@ class Ukulele extends Instrument {
             category: "Chordophones",
             generalInfo: this.gi,
             articles: {
-                chords_in_major_keys: this.a1,
-                chords_in_minor_keys: this.a2,
-                chord_progressions_for_different_emotions: this.a3,
+                ukulele_basic_chords: this.a1,
+                chords_in_major_keys: this.a2,
+                chords_in_minor_keys: this.a3,
+                chord_progressions_for_different_emotions: this.a4,
             },
             links: {
                 general: [
@@ -39,6 +41,9 @@ class Ukulele extends Instrument {
                 chords: [
                     "https://ukulelespace.com/chords",
                     "https://ukulele-chords.com/",
+                    "https://www.khmerchords.com/resources/ukulele-chords/",
+                    "https://fredbolder.github.io/transpose/",
+                    "https://ukuleletricks.com/ukulele-chords/",
                     "https://ukelib.com/"
                 ],
             }

@@ -16,6 +16,7 @@ import imgRecorder from '../Images/recorder_2_text.jpg';
 import imgTinWhistle from '../Images/tin_whistle_2.jpg';
 import imgTongueDrum from '../Images/tongue_drum_1.jpg';
 import imgUkulele from '../Images/ukulele_1.jpg';
+import imgUkuleleBasicChords from '../Images/ukulele_basic_chords.jpg';
 import imgVoice from '../Images/voice_1.jpg';
 import imgDrumSticks from '../Images/drum_sticks.jpg';
 import imgMaintenanceRecorder from '../Images/maintenance_of_a_recorder.jpg';
@@ -145,6 +146,9 @@ function InstrumentPage() {
                 break;
             case 'a:darbuka_patterns':
                 result = imgDarbukaPatterns;
+                break;
+            case 'a:ukulele_basic_chords':
+                result = imgUkuleleBasicChords;
                 break;
             default:
                 result = null;
